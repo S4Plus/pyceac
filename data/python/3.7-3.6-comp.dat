@@ -1,0 +1,58 @@
+number of APIs only in Python-3.7.0 : 43
+number of APIs only in Python-3.6.0 : 3
+number of APIs both have, but different : 6
+number of APIs both have, and the same : 755
+                       Python-3.7.0                                                 Python-3.6.0                        
+========================================================================================================================
+int,PyContextVar_Get(PyContextVar *,PyObject *,PyObject **)                               -                             
+ PyContextVar *,PyContextVar_New(const char *,PyObject *)                                 -                             
+  int,PyContextVar_Reset(PyContextVar *,PyContextToken *)                                 -                             
+PyContextToken *,PyContextVar_Set(PyContextVar *,PyObject *)                               -                             
+               int,PyContext_ClearFreeList()                                              -                             
+          PyContext *,PyContext_Copy(PyContext *)                                         -                             
+            PyContext *,PyContext_CopyCurrent()                                           -                             
+             int,PyContext_Enter(PyContext *)                                             -                             
+              int,PyContext_Exit(PyContext *)                                             -                             
+                PyContext *,PyContext_New()                                               -                             
+         PyObject *,PyImport_GetModule(PyObject *)                                        -                             
+                 PyObject *,PyInit__imp()                                                 -                             
+  int64_t,PyInterpreterState_GetID(PyInterpreterState *)                                  -                             
+      PyInterpreterState *,PyInterpreterState_Main()                                      -                             
+Py_ssize_t,PySlice_AdjustIndices(Py_ssize_t,Py_ssize_t *,Py_ssize_t *,Py_ssize_t)                               -                             
+int,PySlice_Unpack(PyObject *,Py_ssize_t *,Py_ssize_t *,Py_ssize_t *)                               -                             
+               PyObject *,PyThread_GetInfo()                                              -                             
+                 void,PyThread_ReInitTLS()                                                -                             
+     int,PyThread_acquire_lock(PyThread_type_lock,int)                                    -                             
+PyLockStatus,PyThread_acquire_lock_timed(PyThread_type_lock,long long,int)                               -                             
+        PyThread_type_lock,PyThread_allocate_lock()                                       -                             
+                 int,PyThread_create_key()                                                -                             
+               void,PyThread_delete_key(int)                                              -                             
+            void,PyThread_delete_key_value(int)                                           -                             
+                void,PyThread_exit_thread()                                               -                             
+        void,PyThread_free_lock(PyThread_type_lock)                                       -                             
+            void *,PyThread_get_key_value(int)                                            -                             
+              size_t,PyThread_get_stacksize()                                             -                             
+         unsigned long,PyThread_get_thread_ident()                                        -                             
+                void,PyThread_init_thread()                                               -                             
+      void,PyThread_release_lock(PyThread_type_lock)                                      -                             
+          int,PyThread_set_key_value(int,void *)                                          -                             
+            int,PyThread_set_stacksize(size_t)                                            -                             
+       unsigned long,PyThread_start_new_thread(void)                                      -                             
+              Py_tss_t *,PyThread_tss_alloc()                                             -                             
+            int,PyThread_tss_create(Py_tss_t *)                                           -                             
+           void,PyThread_tss_delete(Py_tss_t *)                                           -                             
+            void,PyThread_tss_free(Py_tss_t *)                                            -                             
+            void *,PyThread_tss_get(Py_tss_t *)                                           -                             
+          int,PyThread_tss_is_created(Py_tss_t *)                                         -                             
+          int,PyThread_tss_set(Py_tss_t *,void *)                                         -                             
+  int,PyTraceMalloc_Track(unsigned int,uintptr_t,size_t)                                  -                             
+     int,PyTraceMalloc_Untrack(unsigned int,uintptr_t)                                    -                             
+                             -                               PyObject *,PyErr_SetExcWithArgsKwargs(PyObject *,PyObject *,PyObject *)
+                             -                                       PyObject *,PyEval_GetCallStats(PyObject *)         
+                             -                                                 PyObject *,PyInit_imp()                  
+PyObject *,PyEval_EvalCodeEx(PyObject *,PyObject *,PyObject *,PyObject *const *,int,PyObject *const *,int,PyObject *const *,int,PyObject *,PyObject *)  PyObject *,PyEval_EvalCodeEx(PyObject *,PyObject *,PyObject *,PyObject **,int,PyObject **,int,PyObject **,int,PyObject *,PyObject *)
+  int,PyThreadState_SetAsyncExc(unsigned long,PyObject *)          int,PyThreadState_SetAsyncExc(long,PyObject *)       
+         const char *,PyUnicode_AsUTF8(PyObject *)                       char *,PyUnicode_AsUTF8(PyObject *)            
+const char *,PyUnicode_AsUTF8AndSize(PyObject *,Py_ssize_t *)    char *,PyUnicode_AsUTF8AndSize(PyObject *,Py_ssize_t *)  
+          void,Py_SetProgramName(const wchar_t *)                         void,Py_SetProgramName(wchar_t *)             
+          void,Py_SetPythonHome(const wchar_t *)                          void,Py_SetPythonHome(wchar_t *)              

@@ -1,0 +1,294 @@
+number of APIs only in Python-3.2 : 179
+number of APIs only in Python-2.7 : 79
+number of APIs both have, but different : 30
+number of APIs both have, and the same : 454
+                        Python-3.2                                                   Python-2.7                         
+========================================================================================================================
+PyCodeObject *,PyAST_CompileEx(struct _mod *,const char *,PyCompilerFlags *,int,PyArena *)                               -                             
+      int,PyArg_ValidateKeywordArguments(PyObject *)                                      -                             
+            char *,PyBytes_AsString(PyObject *)                                           -                             
+int,PyBytes_AsStringAndSize(PyObject *,char **,Py_ssize_t *)                               -                             
+        void,PyBytes_Concat(PyObject **,PyObject *)                                       -                             
+     void,PyBytes_ConcatAndDel(PyObject **,PyObject *)                                    -                             
+PyObject *,PyBytes_DecodeEscape(const char *,Py_ssize_t,const char *,Py_ssize_t,const char *)                               -                             
+                    void,PyBytes_Fini()                                                   -                             
+        PyObject *,PyBytes_FromFormat(const char *)                                       -                             
+   PyObject *,PyBytes_FromFormatV(const char *,va_list)                                   -                             
+         PyObject *,PyBytes_FromObject(PyObject *)                                        -                             
+        PyObject *,PyBytes_FromString(const char *)                                       -                             
+PyObject *,PyBytes_FromStringAndSize(const char *,Py_ssize_t)                               -                             
+          PyObject *,PyBytes_Repr(PyObject *,int)                                         -                             
+            Py_ssize_t,PyBytes_Size(PyObject *)                                           -                             
+          int,PyCodec_KnownEncoding(const char *)                                         -                             
+ PyObject *,PyDict_GetItemWithError(PyObject *,PyObject *)                                -                             
+     void,PyErr_SyntaxLocationEx(const char *,int,int)                                    -                             
+ int,PyErr_WarnFormat(PyObject *,Py_ssize_t,const char *)                                 -                             
+        PyObject *,PyException_GetCause(PyObject *)                                       -                             
+       PyObject *,PyException_GetContext(PyObject *)                                      -                             
+      PyObject *,PyException_GetTraceback(PyObject *)                                     -                             
+     void,PyException_SetCause(PyObject *,PyObject *)                                     -                             
+    void,PyException_SetContext(PyObject *,PyObject *)                                    -                             
+    int,PyException_SetTraceback(PyObject *,PyObject *)                                   -                             
+PyObject *,PyFile_FromFd(int,char *,char *,int,char *,char *,char *,int)                               -                             
+           PyObject *,PyFile_NewStdPrinter(int)                                           -                             
+     PyObject *,PyFunction_GetAnnotations(PyObject *)                                     -                             
+      PyObject *,PyFunction_GetKwDefaults(PyObject *)                                     -                             
+   int,PyFunction_SetAnnotations(PyObject *,PyObject *)                                   -                             
+    int,PyFunction_SetKwDefaults(PyObject *,PyObject *)                                   -                             
+PyObject *,PyImport_ExecCodeModuleWithPathnames(char *,PyObject *,char *,char *)                               -                             
+            const char *,PyImport_GetMagicTag()                                           -                             
+     PyObject *,PyInstanceMethod_Function(PyObject *)                                     -                             
+        PyObject *,PyInstanceMethod_New(PyObject *)                                       -                             
+            size_t,PyLong_AsSize_t(PyObject *)                                            -                             
+PyObject *,PyLong_FromUnicode(Py_UNICODE *,Py_ssize_t,int)                                -                             
+          PyObject *,PyMapping_Items(PyObject *)                                          -                             
+           PyObject *,PyMapping_Keys(PyObject *)                                          -                             
+          PyObject *,PyMapping_Values(PyObject *)                                         -                             
+   PyObject *,PyModule_Create2(struct PyModuleDef *,int)                                  -                             
+     struct PyModuleDef *,PyModule_GetDef(PyObject *)                                     -                             
+     PyObject *,PyModule_GetFilenameObject(PyObject *)                                    -                             
+           void *,PyModule_GetState(PyObject *)                                           -                             
+           PyObject *,PyObject_ASCII(PyObject *)                                          -                             
+           PyObject *,PyObject_Bytes(PyObject *)                                          -                             
+    PyObject *,PyState_FindModule(struct PyModuleDef *)                                   -                             
+PyObject *,PyStructSequence_GetItem(PyObject *,Py_ssize_t)                                -                             
+void,PyStructSequence_InitType(PyTypeObject *,PyStructSequence_Desc *)                               -                             
+      PyObject *,PyStructSequence_New(PyTypeObject *)                                     -                             
+PyTypeObject *,PyStructSequence_NewType(PyStructSequence_Desc *)                               -                             
+void,PyStructSequence_SetItem(PyObject *,Py_ssize_t,PyObject *)                               -                             
+        void,PySys_AddWarnOptionUnicode(PyObject *)                                       -                             
+          void,PySys_AddXOption(const wchar_t *)                                          -                             
+           void,PySys_FormatStderr(const char *)                                          -                             
+           void,PySys_FormatStdout(const char *)                                          -                             
+              PyObject *,PySys_GetXOptions()                                              -                             
+         PyObject *,PyType_FromSpec(PyType_Spec *)                                        -                             
+           long,PyType_GetFlags(PyTypeObject *)                                           -                             
+PyObject *,PyUnicodeDecodeError_Create(const char *,const char *,Py_ssize_t,Py_ssize_t,Py_ssize_t,const char *)                               -                             
+  PyObject *,PyUnicodeDecodeError_GetEncoding(PyObject *)                                 -                             
+ int,PyUnicodeDecodeError_GetEnd(PyObject *,Py_ssize_t *)                                 -                             
+   PyObject *,PyUnicodeDecodeError_GetObject(PyObject *)                                  -                             
+   PyObject *,PyUnicodeDecodeError_GetReason(PyObject *)                                  -                             
+int,PyUnicodeDecodeError_GetStart(PyObject *,Py_ssize_t *)                                -                             
+  int,PyUnicodeDecodeError_SetEnd(PyObject *,Py_ssize_t)                                  -                             
+int,PyUnicodeDecodeError_SetReason(PyObject *,const char *)                               -                             
+ int,PyUnicodeDecodeError_SetStart(PyObject *,Py_ssize_t)                                 -                             
+PyObject *,PyUnicodeEncodeError_Create(const char *,const Py_UNICODE *,Py_ssize_t,Py_ssize_t,Py_ssize_t,const char *)                               -                             
+  PyObject *,PyUnicodeEncodeError_GetEncoding(PyObject *)                                 -                             
+ int,PyUnicodeEncodeError_GetEnd(PyObject *,Py_ssize_t *)                                 -                             
+   PyObject *,PyUnicodeEncodeError_GetObject(PyObject *)                                  -                             
+   PyObject *,PyUnicodeEncodeError_GetReason(PyObject *)                                  -                             
+int,PyUnicodeEncodeError_GetStart(PyObject *,Py_ssize_t *)                                -                             
+  int,PyUnicodeEncodeError_SetEnd(PyObject *,Py_ssize_t)                                  -                             
+int,PyUnicodeEncodeError_SetReason(PyObject *,const char *)                               -                             
+ int,PyUnicodeEncodeError_SetStart(PyObject *,Py_ssize_t)                                 -                             
+PyObject *,PyUnicodeTranslateError_Create(const Py_UNICODE *,Py_ssize_t,Py_ssize_t,Py_ssize_t,const char *)                               -                             
+int,PyUnicodeTranslateError_GetEnd(PyObject *,Py_ssize_t *)                               -                             
+ PyObject *,PyUnicodeTranslateError_GetObject(PyObject *)                                 -                             
+ PyObject *,PyUnicodeTranslateError_GetReason(PyObject *)                                 -                             
+int,PyUnicodeTranslateError_GetStart(PyObject *,Py_ssize_t *)                               -                             
+ int,PyUnicodeTranslateError_SetEnd(PyObject *,Py_ssize_t)                                -                             
+int,PyUnicodeTranslateError_SetReason(PyObject *,const char *)                               -                             
+int,PyUnicodeTranslateError_SetStart(PyObject *,Py_ssize_t)                               -                             
+     void,PyUnicodeUCS2_Append(PyObject **,PyObject *)                                    -                             
+  void,PyUnicodeUCS2_AppendAndDel(PyObject **,PyObject *)                                 -                             
+    PyObject *,PyUnicodeUCS2_AsASCIIString(PyObject *)                                    -                             
+PyObject *,PyUnicodeUCS2_AsCharmapString(PyObject *,PyObject *)                               -                             
+PyObject *,PyUnicodeUCS2_AsDecodedObject(PyObject *,const char *,const char *)                               -                             
+PyObject *,PyUnicodeUCS2_AsDecodedUnicode(PyObject *,const char *,const char *)                               -                             
+PyObject *,PyUnicodeUCS2_AsEncodedObject(PyObject *,const char *,const char *)                               -                             
+PyObject *,PyUnicodeUCS2_AsEncodedString(PyObject *,const char *,const char *)                               -                             
+PyObject *,PyUnicodeUCS2_AsEncodedUnicode(PyObject *,const char *,const char *)                               -                             
+    PyObject *,PyUnicodeUCS2_AsLatin1String(PyObject *)                                   -                             
+PyObject *,PyUnicodeUCS2_AsRawUnicodeEscapeString(PyObject *)                               -                             
+    PyObject *,PyUnicodeUCS2_AsUTF16String(PyObject *)                                    -                             
+    PyObject *,PyUnicodeUCS2_AsUTF32String(PyObject *)                                    -                             
+     PyObject *,PyUnicodeUCS2_AsUTF8String(PyObject *)                                    -                             
+     Py_UNICODE *,PyUnicodeUCS2_AsUnicode(PyObject *)                                     -                             
+PyObject *,PyUnicodeUCS2_AsUnicodeEscapeString(PyObject *)                                -                             
+             int,PyUnicodeUCS2_ClearFreelist()                                            -                             
+     int,PyUnicodeUCS2_Compare(PyObject *,PyObject *)                                     -                             
+int,PyUnicodeUCS2_CompareWithASCIIString(PyObject *,const char *)                               -                             
+  PyObject *,PyUnicodeUCS2_Concat(PyObject *,PyObject *)                                  -                             
+     int,PyUnicodeUCS2_Contains(PyObject *,PyObject *)                                    -                             
+Py_ssize_t,PyUnicodeUCS2_Count(PyObject *,PyObject *,Py_ssize_t,Py_ssize_t)                               -                             
+PyObject *,PyUnicodeUCS2_Decode(const char *,Py_ssize_t,const char *,const char *)                               -                             
+PyObject *,PyUnicodeUCS2_DecodeASCII(const char *,Py_ssize_t,const char *)                               -                             
+PyObject *,PyUnicodeUCS2_DecodeCharmap(const char *,Py_ssize_t,PyObject *,const char *)                               -                             
+  PyObject *,PyUnicodeUCS2_DecodeFSDefault(const char *)                                  -                             
+PyObject *,PyUnicodeUCS2_DecodeFSDefaultAndSize(const char *,Py_ssize_t)                               -                             
+PyObject *,PyUnicodeUCS2_DecodeLatin1(const char *,Py_ssize_t,const char *)                               -                             
+PyObject *,PyUnicodeUCS2_DecodeRawUnicodeEscape(const char *,Py_ssize_t,const char *)                               -                             
+PyObject *,PyUnicodeUCS2_DecodeUTF16(const char *,Py_ssize_t,const char *,int *)                               -                             
+PyObject *,PyUnicodeUCS2_DecodeUTF16Stateful(const char *,Py_ssize_t,const char *,int *,Py_ssize_t *)                               -                             
+PyObject *,PyUnicodeUCS2_DecodeUTF32(const char *,Py_ssize_t,const char *,int *)                               -                             
+PyObject *,PyUnicodeUCS2_DecodeUTF32Stateful(const char *,Py_ssize_t,const char *,int *,Py_ssize_t *)                               -                             
+PyObject *,PyUnicodeUCS2_DecodeUTF8(const char *,Py_ssize_t,const char *)                               -                             
+PyObject *,PyUnicodeUCS2_DecodeUTF8Stateful(const char *,Py_ssize_t,const char *,Py_ssize_t *)                               -                             
+PyObject *,PyUnicodeUCS2_DecodeUnicodeEscape(const char *,Py_ssize_t,const char *)                               -                             
+PyObject *,PyUnicodeUCS2_Encode(const Py_UNICODE *,Py_ssize_t,const char *,const char *)                               -                             
+PyObject *,PyUnicodeUCS2_EncodeASCII(const Py_UNICODE *,Py_ssize_t,const char *)                               -                             
+PyObject *,PyUnicodeUCS2_EncodeCharmap(const Py_UNICODE *,Py_ssize_t,PyObject *,const char *)                               -                             
+int,PyUnicodeUCS2_EncodeDecimal(Py_UNICODE *,Py_ssize_t,char *,const char *)                               -                             
+PyObject *,PyUnicodeUCS2_EncodeLatin1(const Py_UNICODE *,Py_ssize_t,const char *)                               -                             
+PyObject *,PyUnicodeUCS2_EncodeRawUnicodeEscape(const Py_UNICODE *,Py_ssize_t)                               -                             
+PyObject *,PyUnicodeUCS2_EncodeUTF16(const Py_UNICODE *,Py_ssize_t,const char *,int)                               -                             
+PyObject *,PyUnicodeUCS2_EncodeUTF32(const Py_UNICODE *,Py_ssize_t,const char *,int)                               -                             
+PyObject *,PyUnicodeUCS2_EncodeUTF8(const Py_UNICODE *,Py_ssize_t,const char *)                               -                             
+PyObject *,PyUnicodeUCS2_EncodeUnicodeEscape(const Py_UNICODE *,Py_ssize_t)                               -                             
+     int,PyUnicodeUCS2_FSConverter(PyObject *,void *)                                     -                             
+      int,PyUnicodeUCS2_FSDecoder(PyObject *,void *)                                      -                             
+Py_ssize_t,PyUnicodeUCS2_Find(PyObject *,PyObject *,Py_ssize_t,Py_ssize_t,int)                               -                             
+  PyObject *,PyUnicodeUCS2_Format(PyObject *,PyObject *)                                  -                             
+PyObject *,PyUnicodeUCS2_FromEncodedObject(PyObject *,const char *,const char *)                               -                             
+     PyObject *,PyUnicodeUCS2_FromFormat(const char *)                                    -                             
+PyObject *,PyUnicodeUCS2_FromFormatV(const char *,va_list)                                -                             
+      PyObject *,PyUnicodeUCS2_FromObject(PyObject *)                                     -                             
+         PyObject *,PyUnicodeUCS2_FromOrdinal(int)                                        -                             
+     PyObject *,PyUnicodeUCS2_FromString(const char *)                                    -                             
+PyObject *,PyUnicodeUCS2_FromStringAndSize(const char *,Py_ssize_t)                               -                             
+PyObject *,PyUnicodeUCS2_FromUnicode(const Py_UNICODE *,Py_ssize_t)                               -                             
+      const char *,PyUnicodeUCS2_GetDefaultEncoding()                                     -                             
+             Py_UNICODE,PyUnicodeUCS2_GetMax()                                            -                             
+       Py_ssize_t,PyUnicodeUCS2_GetSize(PyObject *)                                       -                             
+        int,PyUnicodeUCS2_IsIdentifier(PyObject *)                                        -                             
+   PyObject *,PyUnicodeUCS2_Join(PyObject *,PyObject *)                                   -                             
+ PyObject *,PyUnicodeUCS2_Partition(PyObject *,PyObject *)                                -                             
+PyObject *,PyUnicodeUCS2_RPartition(PyObject *,PyObject *)                                -                             
+PyObject *,PyUnicodeUCS2_RSplit(PyObject *,PyObject *,Py_ssize_t)                               -                             
+PyObject *,PyUnicodeUCS2_Replace(PyObject *,PyObject *,PyObject *,Py_ssize_t)                               -                             
+     int,PyUnicodeUCS2_Resize(PyObject **,Py_ssize_t)                                     -                             
+PyObject *,PyUnicodeUCS2_RichCompare(PyObject *,PyObject *,int)                               -                             
+PyObject *,PyUnicodeUCS2_Split(PyObject *,PyObject *,Py_ssize_t)                               -                             
+    PyObject *,PyUnicodeUCS2_Splitlines(PyObject *,int)                                   -                             
+Py_ssize_t,PyUnicodeUCS2_Tailmatch(PyObject *,PyObject *,Py_ssize_t,Py_ssize_t,int)                               -                             
+PyObject *,PyUnicodeUCS2_Translate(PyObject *,PyObject *,const char *)                               -                             
+PyObject *,PyUnicodeUCS2_TranslateCharmap(const Py_UNICODE *,Py_ssize_t,PyObject *,const char *)                               -                             
+     Py_UNICODE *,PyUnicode_AsUnicodeCopy(PyObject *)                                     -                             
+     PyObject *,PyUnicode_BuildEncodingMap(PyObject *)                                    -                             
+PyObject *,PyUnicode_DecodeUTF7(const char *,Py_ssize_t,const char *)                               -                             
+PyObject *,PyUnicode_DecodeUTF7Stateful(const char *,Py_ssize_t,const char *,Py_ssize_t *)                               -                             
+     PyObject *,PyUnicode_EncodeFSDefault(PyObject *)                                     -                             
+PyObject *,PyUnicode_EncodeUTF7(const Py_UNICODE *,Py_ssize_t,int,int,const char *)                               -                             
+    PyObject *,PyUnicode_InternFromString(const char *)                                   -                             
+        void,PyUnicode_InternImmortal(PyObject **)                                        -                             
+         void,PyUnicode_InternInPlace(PyObject **)                                        -                             
+PyObject *,PyUnicode_TransformDecimalToASCII(Py_UNICODE *,Py_ssize_t)                               -                             
+PyObject *,Py_CompileStringExFlags(const char *,const char *,int,PyCompilerFlags *,int)                               -                             
+             void,Py_SetPath(const wchar_t *)                                             -                             
+Py_UNICODE *,Py_UNICODE_strcat(Py_UNICODE *,const Py_UNICODE *)                               -                             
+Py_UNICODE *,Py_UNICODE_strchr(const Py_UNICODE *,Py_UNICODE)                               -                             
+int,Py_UNICODE_strcmp(const Py_UNICODE *,const Py_UNICODE *)                               -                             
+Py_UNICODE *,Py_UNICODE_strcpy(Py_UNICODE *,const Py_UNICODE *)                               -                             
+       size_t,Py_UNICODE_strlen(const Py_UNICODE *)                                       -                             
+int,Py_UNICODE_strncmp(const Py_UNICODE *,const Py_UNICODE *,size_t)                               -                             
+Py_UNICODE *,Py_UNICODE_strncpy(Py_UNICODE *,const Py_UNICODE *,size_t)                               -                             
+Py_UNICODE *,Py_UNICODE_strrchr(const Py_UNICODE *,Py_UNICODE)                               -                             
+                             -                               PyCodeObject *,PyAST_Compile(struct _mod *,const char *,PyCompilerFlags *,PyArena *)
+                             -                                    PyObject *,PyBuffer_FromMemory(void *,Py_ssize_t)     
+                             -                               PyObject *,PyBuffer_FromObject(PyObject *,Py_ssize_t,Py_ssize_t)
+                             -                               PyObject *,PyBuffer_FromReadWriteMemory(void *,Py_ssize_t) 
+                             -                               PyObject *,PyBuffer_FromReadWriteObject(PyObject *,Py_ssize_t,Py_ssize_t)
+                             -                                           PyObject *,PyBuffer_New(Py_ssize_t)            
+                             -                                         void *,PyCObject_AsVoidPtr(PyObject *)           
+                             -                                      PyObject *,PyCObject_FromVoidPtr(void *,void)       
+                             -                               PyObject *,PyCObject_FromVoidPtrAndDesc(void *,void *,void)
+                             -                                          void *,PyCObject_GetDesc(PyObject *)            
+                             -                                         void *,PyCObject_Import(char *,char *)           
+                             -                                       int,PyCObject_SetVoidPtr(PyObject *,void *)        
+                             -                                      int,PyClass_IsSubclass(PyObject *,PyObject *)       
+                             -                                PyObject *,PyClass_New(PyObject *,PyObject *,PyObject *)  
+                             -                                               int,PyEval_GetRestricted()                 
+                             -                                            FILE *,PyFile_AsFile(PyObject *)              
+                             -                                         void,PyFile_DecUseCount(PyFileObject *)          
+                             -                                  PyObject *,PyFile_FromFile(FILE *,char *,char *,int)    
+                             -                                       PyObject *,PyFile_FromString(char *,char *)        
+                             -                                         void,PyFile_IncUseCount(PyFileObject *)          
+                             -                                           PyObject *,PyFile_Name(PyObject *)             
+                             -                                         void,PyFile_SetBufSize(PyObject *,int)           
+                             -                                     int,PyFile_SetEncoding(PyObject *,const char *)      
+                             -                               int,PyFile_SetEncodingAndErrors(PyObject *,const char *,char *)
+                             -                                          int,PyFile_SoftSpace(PyObject *,int)            
+                             -                                    void,PyFloat_AsReprString(char *,PyFloatObject *)     
+                             -                                      void,PyFloat_AsString(char *,PyFloatObject *)       
+                             -                               PyObject *,PyInstance_New(PyObject *,PyObject *,PyObject *)
+                             -                                   PyObject *,PyInstance_NewRaw(PyObject *,PyObject *)    
+                             -                                              long,PyInt_AsLong(PyObject *)               
+                             -                                         Py_ssize_t,PyInt_AsSsize_t(PyObject *)           
+                             -                                   unsigned long,PyInt_AsUnsignedLongMask(PyObject *)     
+                             -                                                int,PyInt_ClearFreeList()                 
+                             -                                                    void,PyInt_Fini()                     
+                             -                                             PyObject *,PyInt_FromLong(long)              
+                             -                                           PyObject *,PyInt_FromSize_t(size_t)            
+                             -                                        PyObject *,PyInt_FromSsize_t(Py_ssize_t)          
+                             -                                     PyObject *,PyInt_FromString(char *,char **,int)      
+                             -                                                   long,PyInt_GetMax()                    
+                             -                                          PyObject *,PyMethod_Class(PyObject *)           
+                             -                                      int,PyNumber_Coerce(PyObject **,PyObject **)        
+                             -                                     int,PyNumber_CoerceEx(PyObject **,PyObject **)       
+                             -                                    PyObject *,PyNumber_Divide(PyObject *,PyObject *)     
+                             -                                PyObject *,PyNumber_InPlaceDivide(PyObject *,PyObject *)  
+                             -                                           PyObject *,PyNumber_Int(PyObject *)            
+                             -                                          double,PyOS_ascii_atof(const char *)            
+                             -                               char *,PyOS_ascii_formatd(char *,size_t,const char *,double)
+                             -                                     double,PyOS_ascii_strtod(const char *,char **)       
+                             -                                      int,PyObject_Cmp(PyObject *,PyObject *,int *)       
+                             -                                       int,PyObject_Compare(PyObject *,PyObject *)        
+                             -                               PyObject *,PyString_AsDecodedObject(PyObject *,const char *,const char *)
+                             -                               PyObject *,PyString_AsDecodedString(PyObject *,const char *,const char *)
+                             -                               PyObject *,PyString_AsEncodedObject(PyObject *,const char *,const char *)
+                             -                               PyObject *,PyString_AsEncodedString(PyObject *,const char *,const char *)
+                             -                                          char *,PyString_AsString(PyObject *)            
+                             -                               int,PyString_AsStringAndSize(PyObject *,char **,Py_ssize_t *)
+                             -                                      void,PyString_Concat(PyObject **,PyObject *)        
+                             -                                   void,PyString_ConcatAndDel(PyObject **,PyObject *)     
+                             -                               PyObject *,PyString_Decode(const char *,Py_ssize_t,const char *,const char *)
+                             -                               PyObject *,PyString_DecodeEscape(const char *,Py_ssize_t,const char *,Py_ssize_t,const char *)
+                             -                               PyObject *,PyString_Encode(const char *,Py_ssize_t,const char *,const char *)
+                             -                                                  void,PyString_Fini()                    
+                             -                                    PyObject *,PyString_Format(PyObject *,PyObject *)     
+                             -                                      PyObject *,PyString_FromFormat(const char *)        
+                             -                                  PyObject *,PyString_FromFormatV(const char *,va_list)   
+                             -                                      PyObject *,PyString_FromString(const char *)        
+                             -                               PyObject *,PyString_FromStringAndSize(const char *,Py_ssize_t)
+                             -                                   PyObject *,PyString_InternFromString(const char *)     
+                             -                                        void,PyString_InternImmortal(PyObject **)         
+                             -                                        void,PyString_InternInPlace(PyObject **)          
+                             -                                        PyObject *,PyString_Repr(PyObject *,int)          
+                             -                                          Py_ssize_t,PyString_Size(PyObject *)            
+                             -                                           FILE *,PySys_GetFile(char *,FILE *)            
+                             -                               PyObject *,Py_CompileStringFlags(const char *,const char *,int,PyCompilerFlags *)
+                             -                               PyObject *,Py_FindMethod(PyMethodDef [],PyObject *,const char *)
+                             -                               PyObject *,Py_FindMethodInChain(PyMethodChain *,PyObject *,const char *)
+                             -                                                   int,Py_FlushLine()                     
+                             -                               PyObject *,Py_InitModule4_64(const char *,PyMethodDef *,const char *,PyObject *,int)
+                             -                               size_t,Py_UniversalNewlineFread(char *,size_t,FILE *,PyObject *)
+PyCodeObject *,PyCode_New(int,int,int,int,int,PyObject *,PyObject *,PyObject *,PyObject *,PyObject *,PyObject *,PyObject *,PyObject *,int,PyObject *)  PyCodeObject *,PyCode_New(int,int,int,int,PyObject *,PyObject *,PyObject *,PyObject *,PyObject *,PyObject *,PyObject *,PyObject *,int,PyObject *)
+PyObject *,PyErr_NewException(const char *,PyObject *,PyObject *)  PyObject *,PyErr_NewException(char *,PyObject *,PyObject *)
+PyObject *,PyErr_NewExceptionWithDoc(const char *,const char *,PyObject *,PyObject *)  PyObject *,PyErr_NewExceptionWithDoc(char *,char *,PyObject *,PyObject *)
+PyObject *,PyEval_EvalCode(PyObject *,PyObject *,PyObject *)  PyObject *,PyEval_EvalCode(PyCodeObject *,PyObject *,PyObject *)
+PyObject *,PyEval_EvalCodeEx(PyObject *,PyObject *,PyObject *,PyObject **,int,PyObject **,int,PyObject **,int,PyObject *,PyObject *)  PyObject *,PyEval_EvalCodeEx(PyCodeObject *,PyObject *,PyObject *,PyObject **,int,PyObject **,int,PyObject **,int,PyObject *)
+         PyObject *,PyFloat_FromString(PyObject *)                PyObject *,PyFloat_FromString(PyObject *,char **)     
+    int,PyImport_AppendInittab(const char *,PyObject )              int,PyImport_AppendInittab(const char *,void)       
+      PyObject *,PyMethod_New(PyObject *,PyObject *)          PyObject *,PyMethod_New(PyObject *,PyObject *,PyObject *) 
+       const char *,PyModule_GetFilename(PyObject *)                   char *,PyModule_GetFilename(PyObject *)          
+         const char *,PyModule_GetName(PyObject *)                       char *,PyModule_GetName(PyObject *)            
+            Py_hash_t,PyObject_Hash(PyObject *)                            long,PyObject_Hash(PyObject *)               
+     Py_hash_t,PyObject_HashNotImplemented(PyObject *)              long,PyObject_HashNotImplemented(PyObject *)        
+struct _mod *,PyParser_ASTFromFile(FILE *,const char *,const char *,int,char *,char *,PyCompilerFlags *,int *,PyArena *)  struct _mod *,PyParser_ASTFromFile(FILE *,const char *,int,char *,char *,PyCompilerFlags *,int *,PyArena *)
+int,PySlice_GetIndices(PyObject *,Py_ssize_t,Py_ssize_t *,Py_ssize_t *,Py_ssize_t *)  int,PySlice_GetIndices(PySliceObject *,Py_ssize_t,Py_ssize_t *,Py_ssize_t *,Py_ssize_t *)
+int,PySlice_GetIndicesEx(PyObject *,Py_ssize_t,Py_ssize_t *,Py_ssize_t *,Py_ssize_t *,Py_ssize_t *)  int,PySlice_GetIndicesEx(PySliceObject *,Py_ssize_t,Py_ssize_t *,Py_ssize_t *,Py_ssize_t *,Py_ssize_t *)
+         void,PySys_AddWarnOption(const wchar_t *)                        void,PySys_AddWarnOption(char *)              
+         PyObject *,PySys_GetObject(const char *)                        PyObject *,PySys_GetObject(char *)             
+            void,PySys_SetArgv(int,wchar_t **)                             void,PySys_SetArgv(int,char **)              
+         void,PySys_SetArgvEx(int,wchar_t **,int)                       void,PySys_SetArgvEx(int,char **,int)           
+       int,PySys_SetObject(const char *,PyObject *)                    int,PySys_SetObject(char *,PyObject *)           
+            void,PySys_SetPath(const wchar_t *)                              void,PySys_SetPath(char *)                 
+               wchar_t *,Py_GetExecPrefix()                                   char *,Py_GetExecPrefix()                 
+                  wchar_t *,Py_GetPath()                                         char *,Py_GetPath()                    
+                 wchar_t *,Py_GetPrefix()                                       char *,Py_GetPrefix()                   
+             wchar_t *,Py_GetProgramFullPath()                             char *,Py_GetProgramFullPath()               
+               wchar_t *,Py_GetProgramName()                                 char *,Py_GetProgramName()                 
+               wchar_t *,Py_GetPythonHome()                                   char *,Py_GetPythonHome()                 
+                int,Py_Main(int,wchar_t **)                                   int,Py_Main(int,char **)                  
+             void,Py_SetProgramName(wchar_t *)                             void,Py_SetProgramName(char *)               
+             void,Py_SetPythonHome(wchar_t *)                               void,Py_SetPythonHome(char *)               

@@ -1,0 +1,95 @@
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/display.c:99:    if (!PyArg_ParseTuple(args, F_HANDLE "(iiii)(iiii)", &hdc,
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/display.c:120:    if (!PyArg_ParseTuple(args, "O|(iiii)", &op, xy+0, xy+1, xy+2, xy+3))
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/display.c:298:    if (!PyArg_ParseTuple(args, "s(ii)", &mode, &xsize, &ysize))
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/display.c:623:    if (!PyArg_ParseTuple(args, "sO|ii", &title, &callback, &width, &height))
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/display.c:707:    if (!PyArg_ParseTuple(args, PY_ARG_BYTES_LENGTH"(ii)(iiii):_load", &data, &datasize,
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/_imagingft.c:698:    if (!PyArg_ParseTuple(args, "On|izO:render", &string,  &id, &mask, &dir, &features)) {
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/_webp.c:118:    if (!PyArg_ParseTuple(args, "iiIiiiiii",
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/_webp.c:184:    if (!PyArg_ParseTuple(args, "z#iiisifi",
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/_webp.c:560:    if (!PyArg_ParseTuple(args, PY_ARG_BYTES_LENGTH"iiifss#s#s#",
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/decode.c:166:    if (!PyArg_ParseTuple(args, "O|(iiii)", &op, &x0, &y0, &x1, &y1))
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/decode.c:331:    if (!PyArg_ParseTuple(args, "s|iiiii", &mode, &bits, &pad, &fill,
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/decode.c:370:    if (!PyArg_ParseTuple(args, "s|ii", &mode, &n, &ystep))
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/decode.c:438:    if (!PyArg_ParseTuple(args, "s|ii", &mode, &bits, &interlace))
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/decode.c:506:    if (! PyArg_ParseTuple(args, "sssii", &mode, &rawmode, &compname, &fp, &ifdoffset))
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/decode.c:594:    if (!PyArg_ParseTuple(args, "ssi", &mode, &rawmode, &stride))
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/decode.c:625:    if (!PyArg_ParseTuple(args, "ss|ii", &mode, &rawmode, &stride, &ystep))
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/decode.c:658:    if (!PyArg_ParseTuple(args, "ss|ii", &mode, &rawmode, &ystep, &bpc))
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/decode.c:718:    if (!PyArg_ParseTuple(args, "ss|ii", &mode, &rawmode, &ystep, &depth))
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/decode.c:775:    if (!PyArg_ParseTuple(args, "ss|i", &mode, &rawmode, &interlaced))
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/decode.c:827:    if (!PyArg_ParseTuple(args, "ssz|ii", &mode, &rawmode, &jpegmode,
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/decode.c:883:    if (!PyArg_ParseTuple(args, "ss|iiiL", &mode, &format,
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/encode.c:128:    if (!PyArg_ParseTuple(args, "|i", &bufsize))
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/encode.c:182:    if (!PyArg_ParseTuple(args, "i|i", &fh, &bufsize))
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/encode.c:231:    if (!PyArg_ParseTuple(args, "O|(iiii)", &op, &x0, &y0, &x1, &y1))
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/encode.c:411:    if (!PyArg_ParseTuple(args, "ss|ii", &mode, &rawmode, &bits, &interlace))
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/encode.c:443:    if (!PyArg_ParseTuple(args, "ss|ii", &mode, &rawmode, &bits)) {
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/encode.c:476:    if (!PyArg_ParseTuple(args, "ss|ii", &mode, &rawmode, &stride, &ystep))
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/encode.c:508:    if (!PyArg_ParseTuple(args, "ss|i", &mode, &rawmode, &ystep))
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/encode.c:569:    if (!PyArg_ParseTuple(args, "ss|iii"PY_ARG_BYTES_LENGTH, &mode, &rawmode,
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/encode.c:719:    if (!PyArg_ParseTuple(args, "ss|iiiiiiiiO"PY_ARG_BYTES_LENGTH""PY_ARG_BYTES_LENGTH,
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/encode.c:825:    if (! PyArg_ParseTuple(args, "sssisO", &mode, &rawmode, &compname, &fp, &filename, &dir)) {
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/encode.c:997:    if (!PyArg_ParseTuple(args, "ss|OOOsOIOOOssi", &mode, &format,
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/_imagingtk.c:41:    if (!PyArg_ParseTuple(args, "Oi", &arg, &is_interp))
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/path.c:450:    if (!PyArg_ParseTuple(args, "|i:tolist", &flat))
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/map.c:127:    if (!PyArg_ParseTuple(args, "|i", &size))
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/map.c:153:    if (!PyArg_ParseTuple(args, "i|i", &offset, &whence))
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/map.c:197:    if (!PyArg_ParseTuple(args, "s(ii)ii", &mode, &xsize, &ysize,
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/map.c:324:    if (!PyArg_ParseTuple(args, "O(ii)sOn(sii)", &target, &xsize, &ysize,
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/_imaging.c:578:                    if (!PyArg_ParseTuple(color, "L|i", &r, &a))
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/_imaging.c:582:                    if (!PyArg_ParseTuple(color, "Lii|i", &r, &g, &b, &a))
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/_imaging.c:636:    if (!PyArg_ParseTuple(args, "s|(ii)O", &mode, &xsize, &ysize, &color))
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/_imaging.c:663:    if (!PyArg_ParseTuple(args, "s(ii)", &mode, &xsize, &ysize))
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/_imaging.c:675:    if (!PyArg_ParseTuple(args, "s(ii)", &mode, &xsize, &ysize))
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/_imaging.c:846:    if ( ! PyArg_ParseTuple(args, "siiiiiO:color_lut_3d", &mode, &filter,
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/_imaging.c:906:    if (!PyArg_ParseTuple(args, "s|iO", &mode, &dither, &paletteimage))
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/_imaging.c:963:    if (PyArg_ParseTuple(args, "s(iii)", &mode, &r, &g, &b)) {
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/_imaging.c:967:    if (PyArg_ParseTuple(args, "si", &mode, &r)) {
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/_imaging.c:986:    if (!PyArg_ParseTuple(args, "(iiii)", &x0, &y0, &x1, &y1))
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/_imaging.c:997:    if (!PyArg_ParseTuple(args, "ii|i", &x, &y, &mode))
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/_imaging.c:1013:    if (!PyArg_ParseTuple(args, "(ii)ffO", &xsize, &ysize,
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/_imaging.c:1048:    if (!PyArg_ParseTuple(args, "f|i", &radius, &passes))
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/_imaging.c:1202:            if (!PyArg_ParseTuple(extremap, "ii", &i0, &i1))
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/_imaging.c:1209:            if (!PyArg_ParseTuple(extremap, "ii", &i0, &i1))
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/_imaging.c:1255:    if (!PyArg_ParseTuple(args, "i", &size))
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/_imaging.c:1266:    if (!PyArg_ParseTuple(args, "ii", &xoffset, &yoffset))
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/_imaging.c:1281:    if (!PyArg_ParseTuple(args, "O(iiii)|O!",
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/_imaging.c:1545:    if (!PyArg_ParseTuple(args, "|iii", &colours, &method, &kmeans))
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/_imaging.c:1604:    if (!PyArg_ParseTuple(args, "i|i", &index, &alpha))
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/_imaging.c:1660:    if (!PyArg_ParseTuple(args, "(ii)O", &x, &y, &color))
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/_imaging.c:1692:    if (!PyArg_ParseTuple(args, "ii", &size, &rank))
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/_imaging.c:1713:    if (!PyArg_ParseTuple(args, "(ii)|i(ffff)", &xsize, &ysize, &filter,
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/_imaging.c:1819:    if (!PyArg_ParseTuple(args, "(iiii)O!iO|ii",
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/_imaging.c:1864:    if (!PyArg_ParseTuple(args, "i", &op))
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/_imaging.c:1923:    if (!PyArg_ParseTuple(args, "fii", &radius, &percent, &threshold))
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/_imaging.c:1946:    if (!PyArg_ParseTuple(args, "f|i", &radius, &n))
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/_imaging.c:1990:    if (!PyArg_ParseTuple(args, "i:getcolors", &maxcolors))
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/_imaging.c:2085:    if (!PyArg_ParseTuple(args, "i", &band))
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/_imaging.c:2097:    if (!PyArg_ParseTuple(args, "ii", &band, &color))
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/_imaging.c:2112:    if (!PyArg_ParseTuple(args, "O!i",
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/_imaging.c:2248:    if (!PyArg_ParseTuple(args, "O!|fi", &Imaging_Type, &imagep,
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/_imaging.c:2266:    if (!PyArg_ParseTuple(args, "O!|fi", &Imaging_Type, &imagep,
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/_imaging.c:2542:    if (!PyArg_ParseTuple(args, "O!|i", &Imaging_Type, &imagep, &blend))
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/_imaging.c:2595:    if (!PyArg_ParseTuple(args, "Offi|ii", &data, &start, &end, &ink, &width))
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/_imaging.c:2631:    if (!PyArg_ParseTuple(args, "OO!i", &data, &Imaging_Type, &bitmap, &ink))
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/_imaging.c:2669:    if (!PyArg_ParseTuple(args, "Offii|i",
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/_imaging.c:2707:    if (!PyArg_ParseTuple(args, "Oi|ii", &data, &ink, &fill, &width))
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/_imaging.c:2743:    if (!PyArg_ParseTuple(args, "Oi|i", &data, &ink, &width))
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/_imaging.c:2795:    if (!PyArg_ParseTuple(args, "Oi", &data, &ink))
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/_imaging.c:2830:    if (!PyArg_ParseTuple(args, "Oi|i", &outline_, &ink, &fill))
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/_imaging.c:2859:    if (!PyArg_ParseTuple(args, "Offii|i", &data, &start, &end, &ink, &fill, &width))
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/_imaging.c:2896:    if (!PyArg_ParseTuple(args, "Oi|i", &data, &ink, &fill))
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/_imaging.c:2942:    if (!PyArg_ParseTuple(args, "Oi|ii", &data, &ink, &fill, &width))
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/_imaging.c:2998:    if (!PyArg_ParseTuple(args, "|i", &readonly))
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/_imaging.c:3086:    if (!PyArg_ParseTuple(args, "|(ii)(dddd)i", &xsize, &ysize,
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/_imaging.c:3099:    if (!PyArg_ParseTuple(args, "(ii)|f", &xsize, &ysize, &sigma))
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/_imaging.c:3110:    if (!PyArg_ParseTuple(args, "i", &dist))
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/_imaging.c:3129:    if (!PyArg_ParseTuple(args, "i", &status))
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/_imaging.c:3570:    if (!PyArg_ParseTuple(args, "i:set_alignment", &alignment))
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/_imaging.c:3593:    if (!PyArg_ParseTuple(args, "i:set_block_size", &block_size))
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/_imaging.c:3618:    if (!PyArg_ParseTuple(args, "i:set_blocks_max", &blocks_max))
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/_imaging.c:3641:    if (!PyArg_ParseTuple(args, "|i:clear_cache", &i))
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/_imagingcms.c:474:    if (!PyArg_ParseTuple(args, "O!O!ss|ii:buildTransform", &CmsProfile_Type, &pInputProfile, &CmsProfile_Type, &pOutputProfile, &sInMode, &sOutMode, &iRenderingIntent, &cmsFLAGS))
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/_imagingcms.c:499:    if (!PyArg_ParseTuple(args, "O!O!O!ss|iii:buildProofTransform", &CmsProfile_Type, &pInputProfile, &CmsProfile_Type, &pOutputProfile, &CmsProfile_Type, &pProofProfile, &sInMode, &sOutMode, &iRenderingIntent, &iProofIntent, &cmsFLAGS))
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/_imagingcms.c:587:    if (!PyArg_ParseTuple(args, "ii:is_intent_supported", &intent, &direction))
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/_imagingcms.c:614:    if (!PyArg_ParseTuple(args, "|" F_HANDLE "i:get_display_profile", &handle, &is_dc))

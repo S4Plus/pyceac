@@ -1,0 +1,8 @@
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/display.c:707:    if (!PyArg_ParseTuple(args, PY_ARG_BYTES_LENGTH"(ii)(iiii):_load", &data, &datasize,
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/_webp.c:118:    if (!PyArg_ParseTuple(args, "iiIiiiiii",
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/_webp.c:560:    if (!PyArg_ParseTuple(args, PY_ARG_BYTES_LENGTH"iiifss#s#s#",
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/encode.c:569:    if (!PyArg_ParseTuple(args, "ss|iii"PY_ARG_BYTES_LENGTH, &mode, &rawmode,
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/encode.c:719:    if (!PyArg_ParseTuple(args, "ss|iiiiiiiiO"PY_ARG_BYTES_LENGTH""PY_ARG_BYTES_LENGTH,
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/encode.c:997:    if (!PyArg_ParseTuple(args, "ss|OOOsOIOOOssi", &mode, &format,
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/_imaging.c:1568:    if (!PyArg_ParseTuple(args, "s"PY_ARG_BYTES_LENGTH, &rawmode, &palette, &palettesize))
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/_imaging.c:2346:    if (!PyArg_ParseTuple(args, "O!"PY_ARG_BYTES_LENGTH,

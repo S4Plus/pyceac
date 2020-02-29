@@ -1,0 +1,27 @@
+number of APIs only in Python-3.5.0 : 19
+number of APIs only in Python-3.4.0 : 0
+number of APIs both have, but different : 2
+number of APIs both have, and the same : 730
+                       Python-3.5.0                                                 Python-3.4.0                        
+========================================================================================================================
+     PyObject *,PyCodec_NameReplaceErrors(PyObject *)                                     -                             
+PyObject *,PyCoro_New(struct _frame *,PyObject *,PyObject *)                               -                             
+ PyObject *,PyErr_FormatV(PyObject *,const char *,va_list)                                -                             
+PyObject *,PyGen_NewWithQualName(struct _frame *,PyObject *,PyObject *)                               -                             
+            void *,PyMem_Calloc(size_t,size_t)                                            -                             
+           void *,PyMem_RawCalloc(size_t,size_t)                                          -                             
+     PyObject *,PyModuleDef_Init(struct PyModuleDef *)                                    -                             
+    int,PyModule_AddFunctions(PyObject *,PyMethodDef *)                                   -                             
+      int,PyModule_ExecDef(PyObject *,PyModuleDef *)                                      -                             
+PyObject *,PyModule_FromDefAndSpec2(PyModuleDef *,PyObject *,int)                               -                             
+    int,PyModule_SetDocString(PyObject *,const char *)                                    -                             
+PyObject *,PyNumber_InPlaceMatrixMultiply(PyObject *,PyObject *)                               -                             
+ PyObject *,PyNumber_MatrixMultiply(PyObject *,PyObject *)                                -                             
+        int,PyODict_DelItem(PyObject *,PyObject *)                                        -                             
+                 PyObject *,PyODict_New()                                                 -                             
+   int,PyODict_SetItem(PyObject *,PyObject *,PyObject *)                                  -                             
+           void *,PyObject_Calloc(size_t,size_t)                                          -                             
+     wchar_t *,Py_DecodeLocale(const char *,size_t *)                                     -                             
+     char *,Py_EncodeLocale(const wchar_t *,size_t *)                                     -                             
+void,PyMem_GetAllocator(PyMemAllocatorDomain,PyMemAllocatorEx *)  void,PyMem_GetAllocator(PyMemAllocatorDomain,PyMemAllocator *)
+void,PyMem_SetAllocator(PyMemAllocatorDomain,PyMemAllocatorEx *)  void,PyMem_SetAllocator(PyMemAllocatorDomain,PyMemAllocator *)

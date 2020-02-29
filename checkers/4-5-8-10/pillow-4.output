@@ -1,0 +1,9 @@
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/libImaging/Storage.c:211:    strcpy(im->mode, mode);
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/libImaging/Dib.c:109:    strcpy(dib->mode, mode);
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/libImaging/Quant.c:1676:            strcpy(imOut->palette->mode, "RGBA");
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/_imaging.c:1589:    strcpy(self->image->mode, "P");
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/_imaging.c:1617:    strcpy(self->image->palette->mode, "RGBA");
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/_imaging.c:1643:    strcpy(self->image->palette->mode, "RGBA");
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/_imaging.c:1785:        strcpy(im->mode, mode);
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/_imagingcms.c:215:    strcpy(self->mode_in, mode_in);
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/_imagingcms.c:216:    strcpy(self->mode_out, mode_out);

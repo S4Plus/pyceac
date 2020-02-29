@@ -1,0 +1,7 @@
+../corpus/numpy/numpy
+#../corpus/tensorflow/tensorflow
+#../corpus/pytorch/pytorch
+../corpus/pillow/Pillow
+../corpus/krbv/python-krbV-1.0.90
+../corpus/pyaudio/PyAudio-0.2.11
+../corpus/ldap/python-ldap-3.2.0

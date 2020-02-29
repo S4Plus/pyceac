@@ -1,0 +1,10 @@
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/display.c:374:    PyErr_SetString(PyExc_IOError, "screen grab failed");
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/_imagingft.c:457:            PyErr_SetString(PyExc_ValueError, "raqm_get_glyphs() failed.");
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/_imagingft.c:464:            PyErr_SetString(PyExc_ValueError, "raqm_get_glyphs() failed.");
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/_imagingft.c:472:        PyErr_SetString(PyExc_MemoryError, "PyMem_New() failed");
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/_imagingft.c:513:      PyErr_SetString(PyExc_KeyError, "setting text direction or font features is not supported without libraqm");
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/_webp.c:61:            PyErr_SetString(PyExc_ValueError, message);
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/_webp.c:66:            PyErr_SetString(PyExc_IOError, message);
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/_webp.c:70:            PyErr_SetString(PyExc_RuntimeError, message);
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/Tk/tkImaging.c:335:        PyErr_SetString(PyExc_RuntimeError, "Could not find Tcl routines");
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/encode.c:1065:            PyErr_SetString(PyExc_ValueError,

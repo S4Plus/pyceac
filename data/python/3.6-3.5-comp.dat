@@ -1,0 +1,21 @@
+number of APIs only in Python-3.6.0 : 13
+number of APIs only in Python-3.5.0 : 0
+number of APIs both have, but different : 2
+number of APIs both have, and the same : 749
+                       Python-3.6.0                                                 Python-3.5.0                        
+========================================================================================================================
+              int,PyAsyncGen_ClearFreeLists()                                             -                             
+                  void,PyAsyncGen_Fini()                                                  -                             
+PyObject *,PyAsyncGen_New(struct _frame *,PyObject *,PyObject *)                               -                             
+int,PyErr_ResourceWarning(PyObject *,Py_ssize_t,const char *)                               -                             
+PyObject *,PyErr_SetImportErrorSubclass(PyObject *,PyObject *,PyObject *,PyObject *)                               -                             
+          long long,PyLong_AsLongLong(PyObject *)                                         -                             
+ long long,PyLong_AsLongLongAndOverflow(PyObject *,int *)                                 -                             
+ unsigned long long,PyLong_AsUnsignedLongLong(PyObject *)                                 -                             
+unsigned long long,PyLong_AsUnsignedLongLongMask(PyObject *)                               -                             
+         PyObject *,PyLong_FromLongLong(long long)                                        -                             
+PyObject *,PyLong_FromUnsignedLongLong(unsigned long long)                                -                             
+            PyObject *,PyOS_FSPath(PyObject *)                                            -                             
+                    int,Py_FinalizeEx()                                                   -                             
+struct _mod *,PyParser_ASTFromFile(FILE *,const char *,const char *,int,const char *,const char *,PyCompilerFlags *,int *,PyArena *)  struct _mod *,PyParser_ASTFromFile(FILE *,const char *,const char *,int,char *,char *,PyCompilerFlags *,int *,PyArena *)
+struct _mod *,PyParser_ASTFromFileObject(FILE *,PyObject *,const char *,int,const char *,const char *,PyCompilerFlags *,int *,PyArena *)  struct _mod *,PyParser_ASTFromFileObject(FILE *,PyObject *,const char *,int,char *,char *,PyCompilerFlags *,int *,PyArena *)

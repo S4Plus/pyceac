@@ -1,0 +1,52 @@
+number of APIs only in Python-3.4.0 : 30
+number of APIs only in Python-3.3.0 : 0
+number of APIs both have, but different : 16
+number of APIs both have, and the same : 686
+                       Python-3.4.0                                                 Python-3.3.0                        
+========================================================================================================================
+PyCodeObject *,PyAST_CompileObject(struct _mod *,PyObject *,PyCompilerFlags *,int,PyArena *)                               -                             
+         int,PyCompile_OpcodeStackEffect(int,int)                                         -                             
+PyObject *,PyDict_SetDefault(PyObject *,PyObject *,PyObject *)                               -                             
+    PyObject *,PyErr_ProgramTextObject(PyObject *,int)                                    -                             
+PyObject *,PyErr_SetFromErrnoWithFilenameObjects(PyObject *,PyObject *,PyObject *)                               -                             
+    void,PyErr_SyntaxLocationObject(PyObject *,int,int)                                   -                             
+int,PyErr_WarnExplicitFormat(PyObject *,const char *,int,const char *,PyObject *,const char *)                               -                             
+int,PyErr_WarnExplicitObject(PyObject *,PyObject *,PyObject *,int,PyObject *,PyObject *)                               -                             
+PyFutureFeatures *,PyFuture_FromASTObject(struct _mod *,PyObject *)                               -                             
+                  int,PyGILState_Check()                                                  -                             
+           PyHash_FuncDef *,PyHash_GetFuncDef()                                           -                             
+void,PyMem_GetAllocator(PyMemAllocatorDomain,PyMemAllocator *)                               -                             
+                void,PyMem_RawFree(void *)                                                -                             
+              void *,PyMem_RawMalloc(size_t)                                              -                             
+          void *,PyMem_RawRealloc(void *,size_t)                                          -                             
+void,PyMem_SetAllocator(PyMemAllocatorDomain,PyMemAllocator *)                               -                             
+               void,PyMem_SetupDebugHooks()                                               -                             
+          void,PyObject_CallFinalizer(PyObject *)                                         -                             
+     int,PyObject_CallFinalizerFromDealloc(PyObject *)                                    -                             
+ void,PyObject_GetArenaAllocator(PyObjectArenaAllocator *)                                -                             
+   Py_ssize_t,PyObject_LengthHint(PyObject *,Py_ssize_t)                                  -                             
+ void,PyObject_SetArenaAllocator(PyObjectArenaAllocator *)                                -                             
+struct _mod *,PyParser_ASTFromFileObject(FILE *,PyObject *,const char *,int,char *,char *,PyCompilerFlags *,int *,PyArena *)                               -                             
+struct _mod *,PyParser_ASTFromStringObject(const char *,PyObject *,int,PyCompilerFlags *,PyArena *)                               -                             
+int,PyRun_InteractiveOneObject(FILE *,PyObject *,PyCompilerFlags *)                               -                             
+int,PyStructSequence_InitType2(PyTypeObject *,PyStructSequence_Desc *)                               -                             
+         void *,PyType_GetSlot(PyTypeObject *,int)                                        -                             
+PyObject *,Py_CompileStringObject(const char *,PyObject *,int,PyCompilerFlags *,int)                               -                             
+int,Py_SetStandardStreamEncoding(const char *,const char *)                               -                             
+struct symtable *,Py_SymtableStringObject(const char *,PyObject *,int)                               -                             
+PyObject *,PyFile_FromFd(int,const char *,const char *,int,const char *,const char *,const char *,int)  PyObject *,PyFile_FromFd(int,char *,char *,int,char *,char *,char *,int)
+PyObject *,PyImport_ExecCodeModule(const char *,PyObject *)     PyObject *,PyImport_ExecCodeModule(char *,PyObject *)   
+PyObject *,PyImport_ExecCodeModuleEx(const char *,PyObject *,const char *)  PyObject *,PyImport_ExecCodeModuleEx(char *,PyObject *,char *)
+PyObject *,PyImport_ExecCodeModuleWithPathnames(const char *,PyObject *,const char *,const char *)  PyObject *,PyImport_ExecCodeModuleWithPathnames(char *,PyObject *,char *,char *)
+       int,PyImport_ImportFrozenModule(const char *)                   int,PyImport_ImportFrozenModule(char *)          
+  PyObject *,PyLong_FromString(const char *,char **,int)          PyObject *,PyLong_FromString(char *,char **,int)      
+PyObject *,PyMapping_GetItemString(PyObject *,const char *)     PyObject *,PyMapping_GetItemString(PyObject *,char *)   
+    int,PyMapping_HasKeyString(PyObject *,const char *)             int,PyMapping_HasKeyString(PyObject *,char *)       
+int,PyMapping_SetItemString(PyObject *,const char *,PyObject *)   int,PyMapping_SetItemString(PyObject *,char *,PyObject *) 
+     char *,PyOS_Readline(FILE *,FILE *,const char *)                char *,PyOS_Readline(FILE *,FILE *,char *)         
+        long,PyOS_strtol(const char *,char **,int)                      long,PyOS_strtol(char *,char **,int)            
+   unsigned long,PyOS_strtoul(const char *,char **,int)            unsigned long,PyOS_strtoul(char *,char **,int)       
+ PyObject *,PyObject_CallFunction(PyObject *,const char *)       PyObject *,PyObject_CallFunction(PyObject *,char *)    
+PyObject *,PyObject_CallMethod(PyObject *,const char *,const char *)   PyObject *,PyObject_CallMethod(PyObject *,char *,char *)  
+    int,PyObject_DelItemString(PyObject *,const char *)             int,PyObject_DelItemString(PyObject *,char *)       
+       unsigned long,PyType_GetFlags(PyTypeObject *)                    long,PyType_GetFlags(PyTypeObject *)            

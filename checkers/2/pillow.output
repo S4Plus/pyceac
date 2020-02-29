@@ -1,0 +1,59 @@
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/_webp.c:426:    ret = Py_BuildValue("Si", bytes, timestamp);
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/_webp.c:762:    ret = Py_BuildValue("SiiSSS", bytes, config.output.width,
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/encode.c:142:    result = Py_BuildValue("iiO", status, encoder->state.errcode, buf);
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/_imagingmorph.c:212:                PyObject *coordObj = Py_BuildValue("(nn)",col_idx,row_idx);
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/_imagingmorph.c:249:                PyObject *coordObj = Py_BuildValue("(nn)",col_idx,row_idx);
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/_imaging.c:2004:            PyObject* item = Py_BuildValue(
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/_imaging.c:2068:    result = Py_BuildValue(PY_ARG_BYTES_LENGTH PY_ARG_BYTES_LENGTH,
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/_imaging.c:2522:    val = Py_BuildValue("ii", textwidth(self, text), self->ysize);
+#define PyInt_FromLong              PyLong_FromLong
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/path.c:454:        list = PyList_New(self->count*2);
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/path.c:463:        list = PyList_New(self->count);
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/_imagingmorph.c:148:    PyObject *ret = PyList_New(0);
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/_imagingmorph.c:233:    PyObject *ret = PyList_New(0);
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/_imaging.c:1233:    list = PyList_New(h->bands * 256);
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/_imaging.c:2001:        out = PyList_New(colors);
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/libImaging/RankFilter.c:81:    type* buf = malloc(size2 * sizeof(type));\
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/libImaging/Storage.c:344:            block.ptr = malloc(requested_size);
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/libImaging/Storage.c:479:        im->block = (char *) malloc(1);
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/libImaging/ZipDecode.c:68:        state->buffer = (UINT8*) malloc(state->bytes+1);
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/libImaging/TiffDecode.c:379:        clientstate->data = malloc(bufsize);
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/libImaging/ZipEncode.c:50:        state->buffer = (UINT8*) malloc(state->bytes+1);
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/libImaging/ZipEncode.c:51:        context->previous = (UINT8*) malloc(state->bytes+1);
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/libImaging/ZipEncode.c:52:        context->prior = (UINT8*) malloc(state->bytes+1);
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/libImaging/ZipEncode.c:53:        context->up = (UINT8*) malloc(state->bytes+1);
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/libImaging/ZipEncode.c:54:        context->average = (UINT8*) malloc(state->bytes+1);
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/libImaging/ZipEncode.c:55:        context->paeth = (UINT8*) malloc(state->bytes+1);
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/libImaging/Quant.c:568:   left=malloc(sizeof(BoxNode));
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/encode.c:745:        char* p = malloc(extra_size); // Freed in JpegEncode, Case 5
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/encode.c:755:        char* pp = malloc(rawExifLen); // Freed in JpegEncode, Case 5
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/_imaging.c:2057:    xprofile = malloc(self->image->xsize);
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/_imagingft.c:952:    PyDict_SetItemString(d, "freetype2_version", v);
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/_imagingft.c:957:    PyDict_SetItemString(d, "HAVE_RAQM", v);
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/_imagingmorph.c:263:    PyDict_SetItemString(d, "__version", PyUnicode_FromString("0.1"));
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/_imaging.c:3506:    PyDict_SetItemString(d, "new_count",
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/_imaging.c:3508:    PyDict_SetItemString(d, "allocated_blocks",
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/_imaging.c:3510:    PyDict_SetItemString(d, "reused_blocks",
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/_imaging.c:3512:    PyDict_SetItemString(d, "reallocated_blocks",
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/_imaging.c:3514:    PyDict_SetItemString(d, "freed_blocks",
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/_imaging.c:3516:    PyDict_SetItemString(d, "blocks_cached",
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/_imaging.c:3843:    PyDict_SetItemString(d, "jpeglib_version", PyUnicode_FromString(ImagingJpegVersion()));
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/_imaging.c:3850:    PyDict_SetItemString(d, "jp2klib_version", PyUnicode_FromString(ImagingJpeg2KVersion()));
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/_imaging.c:3869:    PyDict_SetItemString(d, "zlib_version", PyUnicode_FromString(ImagingZipVersion()));
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/_imaging.c:3876:    PyDict_SetItemString(d, "libtiff_version", PyUnicode_FromString(ImagingTiffVersion()));
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/_imaging.c:3880:    PyDict_SetItemString(d, "PILLOW_VERSION", PyUnicode_FromString(version));
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/_imagingcms.c:912:	PyDict_SetItem(result, id, entry);
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/_imagingcms.c:1594:    PyDict_SetItemString(d, "littlecms_version", v);
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/path.c:460:            PyList_SetItem(list, i, item);
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/path.c:469:            PyList_SetItem(list, i, item);
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/_imaging.c:1242:        PyList_SetItem(list, i, item);
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/_imaging.c:2007:            PyList_SetItem(out, i, item);
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/_imagingcms.c:826:        PyList_SET_ITEM(result, i, str);
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/_imaging.c:2164:        PyTuple_SET_ITEM(list, i, imaging_object);
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/_imaging.c:3507:                         PyInt_FromLong(arena->stats_new_count));
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/_imaging.c:3509:                         PyInt_FromLong(arena->stats_allocated_blocks));
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/_imaging.c:3511:                         PyInt_FromLong(arena->stats_reused_blocks));
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/_imaging.c:3513:                         PyInt_FromLong(arena->stats_reallocated_blocks));
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/_imaging.c:3515:                         PyInt_FromLong(arena->stats_freed_blocks));
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/_imaging.c:3517:                         PyInt_FromLong(arena->blocks_cached));
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/_imagingcms.c:900:	id = PyInt_FromLong((long) intent);

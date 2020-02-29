@@ -1,0 +1,112 @@
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/display.c pass
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/libImaging/UnsharpMask.c pass
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/libImaging/Crop.c pass
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/libImaging/PcxDecode.c pass
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/libImaging/Jpeg2KDecode.c pass
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/libImaging/PcxEncode.c pass
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/libImaging/PcdDecode.c pass
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/libImaging/Palette.c pass
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/libImaging/QuantHash.c pass
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/libImaging/Jpeg2KEncode.c pass
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/libImaging/RankFilter.c pass
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/libImaging/EpsEncode.c pass
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/libImaging/GetBBox.c pass
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/libImaging/Paste.c pass
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/libImaging/BcnDecode.c pass
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/libImaging/PackDecode.c pass
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/libImaging/Storage.c pass
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/libImaging/Negative.c pass
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/libImaging/Access.c pass
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/libImaging/Effects.c pass
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/libImaging/QuantHeap.c pass
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/libImaging/BoxBlur.c pass
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/libImaging/Unpack.c pass
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/libImaging/ZipDecode.c pass
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/libImaging/Convert.c pass
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/libImaging/codec_fd.c pass
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/libImaging/TiffDecode.c pass
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/libImaging/SunRleDecode.c pass
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/libImaging/ZipEncode.c pass
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/libImaging/Copy.c pass
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/libImaging/Draw.c pass
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/libImaging/Geometry.c pass
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/libImaging/ConvertYCbCr.c pass
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/libImaging/Filter.c pass
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/libImaging/HexDecode.c pass
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/libImaging/UnpackYCC.c pass
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/libImaging/JpegDecode.c pass
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/libImaging/Pack.c pass
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/libImaging/Fill.c pass
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/libImaging/RawDecode.c pass
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/libImaging/TgaRleEncode.c pass
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/libImaging/Resample.c:616:16: warning: Potential leak of memory pointed to by 'bounds_horiz'
+        return NULL;
+               ^~~~
+/usr/include/sys/_types/_null.h:30:15: note: expanded from macro 'NULL'
+#define NULL  __DARWIN_NULL
+              ^~~~~~~~~~~~~
+/usr/include/sys/_types.h:52:32: note: expanded from macro '__DARWIN_NULL'
+#define __DARWIN_NULL ((void *)0)
+                               ^
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/libImaging/Resample.c:616:16: warning: Potential leak of memory pointed to by 'kk_horiz'
+        return NULL;
+               ^~~~
+/usr/include/sys/_types/_null.h:30:15: note: expanded from macro 'NULL'
+#define NULL  __DARWIN_NULL
+              ^~~~~~~~~~~~~
+/usr/include/sys/_types.h:52:32: note: expanded from macro '__DARWIN_NULL'
+#define __DARWIN_NULL ((void *)0)
+                               ^
+2 warnings generated.
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/libImaging/Resample.c pass
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/libImaging/RawEncode.c pass
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/libImaging/JpegEncode.c pass
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/libImaging/Blend.c pass
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/libImaging/BitDecode.c pass
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/libImaging/TgaRleDecode.c pass
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/libImaging/Point.c pass
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/libImaging/AlphaComposite.c pass
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/libImaging/SgiRleDecode.c pass
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/libImaging/Chops.c pass
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/libImaging/Offset.c pass
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/libImaging/QuantPngQuant.c pass
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/libImaging/FliDecode.c pass
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/libImaging/File.c pass
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/libImaging/ColorLUT.c pass
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/libImaging/Dib.c pass
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/libImaging/Quant.c pass
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/libImaging/Bands.c pass
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/libImaging/XbmEncode.c pass
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/libImaging/GifDecode.c pass
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/libImaging/Except.c pass
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/libImaging/QuantOctree.c pass
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/libImaging/Histo.c pass
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/libImaging/GifEncode.c pass
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/libImaging/XbmDecode.c pass
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/libImaging/ModeFilter.c pass
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/libImaging/Matrix.c pass
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/_imagingft.c:24:10: fatal error: 'ft2build.h' file not found
+#include <ft2build.h>
+         ^~~~~~~~~~~~
+1 error generated.
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/_imagingft.c pass
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/_webp.c pass
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/_imagingmath.c pass
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/decode.c pass
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/Tk/tkImaging.c pass
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/encode.c pass
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/_imagingtk.c pass
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/path.c pass
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/outline.c pass
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/map.c pass
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/_imagingmorph.c pass
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/_imaging.c:3822:34: error: use of undeclared identifier 'PILLOW_VERSION'
+    const char* version = (char*)PILLOW_VERSION;
+                                 ^
+1 error generated.
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/_imaging.c pass
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/_imagingcms.c:32:10: fatal error: 'lcms2.h' file not found
+#include "lcms2.h"
+         ^~~~~~~~~
+1 error generated.
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/_imagingcms.c pass

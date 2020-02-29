@@ -1,0 +1,3 @@
+/Users/hmz/USTC/document/PythonC/empirical/code/function_prototype/build/CMakeFiles/rebuild_cache.dir
+/Users/hmz/USTC/document/PythonC/empirical/code/function_prototype/build/CMakeFiles/edit_cache.dir
+/Users/hmz/USTC/document/PythonC/empirical/code/function_prototype/build/CMakeFiles/function-prototype.dir

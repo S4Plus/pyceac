@@ -1,0 +1,2 @@
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/PIL/Jpeg2KImagePlugin.py:183:            length = os.fstat(fd).st_size
+/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/PIL/ImageGrab.py:70:        if os.stat(filepath).st_size != 0:
