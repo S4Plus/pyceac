@@ -141,7 +141,7 @@ if __name__ == "__main__":
 
     # format output
     stream = sys.stdout
-    template = "{:^15} " * 8
+    template = "{:^15} " * (proj_num + 1)
     proj_headnames = [""] + proj_names
     headerline = template.format(*proj_headnames)
     stream.write(headerline + "\n")
