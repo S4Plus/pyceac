@@ -1,3 +1,4 @@
+import sys
 import subprocess
 import linecache
 
@@ -30,9 +31,8 @@ def grep_parser(grep_line):
     content = grep_line[pos_lineno + 1:-1]
     return (filename, lineno, content)
 
-# string -> None 
-def check(api):
-    path = "/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src"
+# string, string -> None 
+def check(api, path):
     command = "grep -rn \"" + api + "(\" " + path
     
     for line in exec_command(command):
@@ -56,9 +56,8 @@ def fmt_checker(fmt):
             return True
     return False
 
-# string -> None 
-def py_check(api):
-    path = "/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src"
+# string, string -> None 
+def py_check(api, path):
     command = "grep -rn \"" + api + "(\" " + path # pay attention to "(" here
     
     for line in exec_command(command):
@@ -81,13 +80,13 @@ if __name__ == "__main__":
     # # 4: buffer overflow
     # for api in targets:
     #     #print("===== {} =====".format(api))
-    #     check(api)
+    #     check(api, sys.argv[1])
 
     # # 5: TOCTTOU
-    # for api in ['stat']:
-    #     check(api)
+    for api in ['stat']:
+        check(api, sys.argv[1])
 
     # 8/10-2: see fmt_checker()
     for api in py_targets:
         #print("===== {} =====".format(api))
-        py_check(api)
+        py_check(api, sys.argv[1])

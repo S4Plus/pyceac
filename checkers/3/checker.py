@@ -1,5 +1,5 @@
 import subprocess
-import os
+import os, sys
 
 # string -> string list
 def exec_command(command):
@@ -9,8 +9,8 @@ def exec_command(command):
 
 # string -> None 
 def check(folder):
-    #command = "clang -cc1 -I/Library/Frameworks/Python.framework/Versions/3.7/include/python3.7m -I/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/libImaging -I/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/Tk -analyze -analyzer-checker=unix.Malloc "
-    command = "clang -cc1 -I/Library/Frameworks/Python.framework/Versions/3.7/include/python3.7m -I/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/libImaging -I/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src/Tk -analyze -analyzer-checker=unix.MismatchedDeallocator "
+    command = "clang -cc1 -I/Users/hmz/Projects/pyceac-dev/code/fake_include/ -I/usr/local/Cellar/python/3.7.7/Frameworks/Python.framework/Versions/3.7/include/python3.7m/ -I/Users/hmz/Projects/pyceac-dev/corpus/pillow/Pillow/src/libImaging -I/Users/hmz/Projects/pyceac-dev/corpus/pillow/Pillow/src/Tk -analyze -analyzer-checker=unix.Malloc "
+    # command = "clang -cc1 -I/Users/hmz/Projects/pyceac-dev/code/fake_include/ -I/usr/local/Cellar/python/3.7.7/Frameworks/Python.framework/Versions/3.7/include/python3.7m/ -I/Users/hmz/Projects/pyceac-dev/corpus/pillow/Pillow/src/libImaging -I/Users/hmz/Projects/pyceac-dev/corpus/pillow/Pillow/src/Tk -analyze -analyzer-checker=unix.MismatchedDeallocator "
 
     paths = os.listdir(folder)
     for p in paths:
@@ -27,5 +27,4 @@ def check(folder):
                         print(line)
 
 if __name__ == "__main__":
-    folder = "/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src"
-    check(folder)
+    check(sys.argv[1])

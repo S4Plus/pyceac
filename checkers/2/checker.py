@@ -1,4 +1,6 @@
 # TODO save output in a set to remove duplicated warnings
+
+import sys
 import subprocess
 import linecache
 
@@ -82,9 +84,8 @@ def assignment_parser(assignment):
     else:
         return left
 
-# string, string, bool -> None 
-def check(api, errval, append):
-    path = "/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src"
+# string, string, bool, string -> None 
+def check(api, errval, append, path):
     command = "grep -rn \"" + api + "\" " + path
     
     for line in exec_command(command):
@@ -122,10 +123,10 @@ if __name__ == "__main__":
     for (errval, apis) in rules.items():
         for api in apis:
             #print("===== " + api + " =====")
-            check(api, errval, True)
+            check(api, errval, True, sys.argv[1])
 
     #print(append_rules)
     for (errval, apis) in append_rules.items():
         for api in apis:
             #print("===== " + api + " =====")
-            check(api, errval, False)
+            check(api, errval, False, sys.argv[1])

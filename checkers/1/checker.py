@@ -1,6 +1,7 @@
 # TODO false negative: use if-else/switch for different exceptions (fallthrough)
 # TODO macro
 
+import sys
 import subprocess
 import linecache
 
@@ -35,10 +36,8 @@ def postprocess(line):
             return True
     return False
 
-# string -> None 
-def check(keyword):
-    path = "/Users/hmz/USTC/document/PythonC/empirical/corpus/pillow/Pillow/src"
-
+# string, string -> None 
+def check(keyword, path):
     command = "grep -rn \"" + keyword + "\" " + path
     
     for line in exec_command(command):
@@ -100,4 +99,4 @@ if __name__ == "__main__":
         "PyErr_ResourceWarning", 
     ]
     for k in keywords:
-        check(k)
+        check(k, sys.argv[1])
