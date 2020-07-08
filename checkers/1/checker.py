@@ -2,6 +2,7 @@
 # TODO macro
 
 import sys
+import time
 import subprocess
 import linecache
 
@@ -26,15 +27,25 @@ def next_program_line(filepath, lineno):
 def postprocess(line):
     post_process_funcs = [
         "Py_DECREF", 
+        "Py_XDECREF", 
         "PyBuffer_Release", 
         "_PyBytesWriter_Dealloc", 
         "free", 
     ]
 
-    for f in post_process_funcs:
-        if line.startswith(f):
+    f_pos = line.find('(')
+    if f_pos != -1:
+        f = line[:f_pos]
+        if f.strip() in post_process_funcs:
             return True
-    return False
+        else: return False
+    else:
+        return False
+
+    # for f in post_process_funcs:
+    #     if line.startswith(f):
+    #         return True
+    # return False
 
 # string, string -> None 
 def check(keyword, path):
@@ -67,6 +78,8 @@ def check(keyword, path):
                 print(line.strip())
 
 if __name__ == "__main__":
+    start_time = time.time()
+
     keywords = [
         # exceptions
         "PyErr_SetString", 
@@ -100,3 +113,6 @@ if __name__ == "__main__":
     ]
     for k in keywords:
         check(k, sys.argv[1])
+
+    end_time = time.time()
+    print("total time : {:.2f}s".format(end_time - start_time))
