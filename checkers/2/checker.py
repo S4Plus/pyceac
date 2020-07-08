@@ -98,7 +98,7 @@ def check(api, errval, append, path):
             continue
         elif content.strip().startswith("if") or content.strip().startswith("else if"):
             continue
-        elif content.strip().startswith("//") or content.strip().startswith("/*"):
+        elif content.strip().startswith("//") or content.strip().startswith("/*") or content.strip().startswith("*"):
             continue
         elif content.strip().startswith("#define"):
             if append == True:
