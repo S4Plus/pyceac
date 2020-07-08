@@ -18,7 +18,7 @@ def next_program_line(filepath, lineno):
     if (not current_line.endswith(";")):
         return next_program_line(filepath, lineno)
     next_line = linecache.getline(filepath, lineno).strip()
-    if (next_line == "}" or next_line == ""):
+    if (next_line == "}" or next_line == "") or next_line.startswith('//') or next_line.startswith('/*'):
         return linecache.getline(filepath, lineno + 1).strip()
     else:
         return next_line
@@ -71,8 +71,8 @@ def check(keyword, path):
         if (not next.startswith("return")):
             if (next.startswith("goto") or postprocess(next)):
                 # TODO
-                #   false positive: further check
-                #   false negative: other post-process (can be user-defined)
+                #   false negative: further check
+                #   false positive: other post-process (can be user-defined)
                 pass
             else:
                 print(line.strip())
