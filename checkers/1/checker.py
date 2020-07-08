@@ -31,8 +31,10 @@ def postprocess(line):
         "PyBuffer_Release", 
         "_PyBytesWriter_Dealloc", 
         "free", 
+        "PyArray_free", 
     ]
 
+    # new version
     f_pos = line.find('(')
     if f_pos != -1:
         f = line[:f_pos]
@@ -42,6 +44,7 @@ def postprocess(line):
     else:
         return False
 
+    # # old version: complexity will incease with funcs list
     # for f in post_process_funcs:
     #     if line.startswith(f):
     #         return True
