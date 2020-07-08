@@ -15,7 +15,8 @@ def check(folder):
     paths = os.listdir(folder)
     for p in paths:
         abspath = folder + '/' + p
-        if p.find('.') == -1:
+        p_abs = os.path.abspath(abspath)
+        if os.path.isdir(p_abs):
             check(abspath)
         else:
             if p.endswith('.c'):
