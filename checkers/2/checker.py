@@ -1,6 +1,7 @@
 # TODO save output in a set to remove duplicated warnings
 
 import sys
+import time
 import subprocess
 import linecache
 
@@ -90,6 +91,9 @@ def check(api, errval, append, path):
     
     for line in exec_command(command):
         (filename, lineno, content) = grep_parser(line)
+        if not filename.endswith(".c") and not filename.endswith(".h"):
+            continue
+        
         if content.strip().startswith("return"):
             continue
         elif content.strip().startswith("if") or content.strip().startswith("else if"):
@@ -120,6 +124,8 @@ def check(api, errval, append, path):
                 print(line.strip())
 
 if __name__ == "__main__":
+    start_time = time.time()
+
     for (errval, apis) in rules.items():
         for api in apis:
             #print("===== " + api + " =====")
@@ -130,3 +136,6 @@ if __name__ == "__main__":
         for api in apis:
             #print("===== " + api + " =====")
             check(api, errval, False, sys.argv[1])
+
+    end_time = time.time()
+    print("total time : {:.2f}s".format(end_time - start_time))
