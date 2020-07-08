@@ -54,6 +54,7 @@ PyList_SetItem(out, i, item);
 ```PyList_SetItem``` does not perform empty checking on ```item``` at all.
 
 _imaging.c, 3507
+
 _imaging.c, 3509
 _imaging.c, 3511
 _imaging.c, 3513
@@ -115,6 +116,7 @@ if (!PyArg_ParseTuple(args, "ss|OOOsOIOOOssi", &mode, &format,
 ### API evolution
 
 encode.c, 179, 181 (2 errors in one format string)
+
 encode.c, 126
 encode.c, 228 (4)
 encode.c, 407, 408
