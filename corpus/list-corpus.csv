@@ -3,6 +3,6 @@ python-krbV,1.0.90,https://files.pythonhosted.org/packages/07/46/69342afe17fcc05
 PyAudio,0.2.11,https://files.pythonhosted.org/packages/ab/42/b4f04721c5c5bfc196ce156b3c768998ef8c0ae3654ed29ea5020c749a6b/PyAudio-0.2.11.tar.gz,93bfde30e0b64e63a46f2fd77e85c41fd51182a4a3413d9edfaf9ffaa26efb74
 python-ldap,3.2.0,https://files.pythonhosted.org/packages/ea/93/596f875e003c770447f4b99267820a0c769dd2dc3ae3ed19afe460fcbad0/python-ldap-3.2.0.tar.gz,7d1c4b15375a533564aad3d3deade789221e450052b21ebb9720fb822eccdb8e
 Pillow,5.4.1,https://github.com/python-pillow/Pillow.git
-NumPy,v1.1.0rc1,https://github.com/numpy/numpy.git
-TensorFlow,v1.10.0,https://github.com/tensorflow/tensorflow.git
-PyTorch,v1.0rc1,https://github.com/pytorch/pytorch.git
+NumPy,1.16.2,https://github.com/numpy/numpy.git
+TensorFlow,1.13.1,https://github.com/tensorflow/tensorflow.git
+PyTorch,1.0.1,https://github.com/pytorch/pytorch.git
