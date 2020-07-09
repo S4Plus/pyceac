@@ -1,0 +1,256 @@
+Manual inpection of generated warning (file *.output), in the following format:
+
+Original warning
+Y (confirmed) / N (false positive)
+(if Y) issue link / (if N) reason
+
+Common false positive reasons (see TODO in checker.py):
+
+- macro surrounded
+- if/else/switch
+- unknown postprocess
+
+../../corpus/numpy/numpy/numpy//core/src/multiarray/hashdescr.c:288:        PyErr_SetString(PyExc_SystemError,
+N
+macro
+
+../../corpus/numpy/numpy/numpy//core/src/multiarray/common.c:728:        PyErr_SetString(PyExc_ValueError, "shapes are not aligned");
+N
+end of a void function
+
+../../corpus/numpy/numpy/numpy//core/src/multiarray/nditer_api.c:350:            PyErr_SetString(PyExc_ValueError,
+N
+if/else
+
+../../corpus/numpy/numpy/numpy//core/src/multiarray/nditer_api.c:365:                PyErr_SetString(PyExc_ValueError, "iterator is too large");
+N
+if/else
+
+../../corpus/numpy/numpy/numpy//core/src/multiarray/methods.c:736:            PyErr_SetString(PyExc_ValueError,
+Y
+https://github.com/numpy/numpy/issues/16773
+
+../../corpus/numpy/numpy/numpy//core/src/multiarray/conversion_utils.c:74:        PyErr_SetString(PyExc_TypeError,
+N
+next line is `*address = NULL`
+
+../../corpus/numpy/numpy/numpy//core/src/multiarray/conversion_utils.c:917:                PyErr_SetString(PyExc_ValueError,
+N
+a complex if/else
+
+../../corpus/numpy/numpy/numpy//core/src/multiarray/conversion_utils.c:939:                    PyErr_SetString(PyExc_ValueError,
+N
+a complex if/else
+
+../../corpus/numpy/numpy/numpy//core/src/multiarray/convert_datatype.c:1996:            PyErr_SetString(PyExc_TypeError,
+N
+if/else
+
+../../corpus/numpy/numpy/numpy//core/src/multiarray/convert_datatype.c:2192:        PyErr_SetString(PyExc_ValueError, "0-length sequence.");
+N
+if/else, PyErr_Occurred
+
+../../corpus/numpy/numpy/numpy//core/src/multiarray/mapping.c:615:                PyErr_SetString(PyExc_IndexError,
+N
+postprocess in loop
+
+../../corpus/numpy/numpy/numpy//core/src/multiarray/mapping.c:689:            PyErr_SetString(PyExc_IndexError,
+N
+if/else
+
+../../corpus/numpy/numpy/numpy//core/src/multiarray/ctors.c:1960:            PyErr_SetString(PyExc_ValueError,
+N
+if/else
+
+../../corpus/numpy/numpy/numpy//core/src/multiarray/ctors.c:1967:            PyErr_SetString(PyExc_ValueError,
+N
+if/else
+
+../../corpus/numpy/numpy/numpy//core/src/multiarray/nditer_pywrap.c:668:                    PyErr_SetString(PyExc_TypeError,
+N
+postprocess in loop
+
+../../corpus/numpy/numpy/numpy//core/src/multiarray/datetime.c:607:    PyErr_SetString(PyExc_RuntimeError,
+N
+end of a void function
+
+../../corpus/numpy/numpy/numpy//core/src/multiarray/datetime.c:629:    PyErr_SetString(PyExc_RuntimeError,
+N
+end of a void function
+
+../../corpus/numpy/numpy/numpy//core/src/multiarray/datetime.c:1095:        PyErr_SetString(PyExc_ValueError,
+N
+next line is `*out_num = 0`
+
+../../corpus/numpy/numpy/numpy//core/src/common/ufunc_override.c:90:        PyErr_SetString(PyExc_TypeError,
+N
+gc with *obj = NULL/0
+
+../../corpus/numpy/numpy/numpy//core/src/common/python_xerbla.c:41:        PyErr_SetString(PyExc_ValueError, buf);
+N
+macro
+
+../../corpus/numpy/numpy/numpy//core/src/umath/ufunc_object.c:5166:            PyErr_SetString(PyExc_KeyError,
+N
+macro
+
+../../corpus/numpy/numpy/numpy//core/src/umath/ufunc_object.c:5200:                PyErr_SetString(PyExc_RuntimeError,
+N
+macro
+
+../../corpus/numpy/numpy/numpy//core/src/umath/ufunc_object.c:5850:        PyErr_SetString(PyExc_ValueError, err_msg);
+N
+complex garbage collection
+
+../../corpus/numpy/numpy/numpy//linalg/lapack_lite/python_xerbla.c:41:        PyErr_SetString(PyExc_ValueError, buf);
+N
+macro
+
+../../corpus/numpy/numpy/numpy//core/src/multiarray/common.c:725:        PyErr_SetObject(PyExc_ValueError, errmsg);
+N
+if/else, end of void function
+
+../../corpus/numpy/numpy/numpy//core/src/multiarray/buffer.c:954:        PyErr_Format(PyExc_ValueError,
+N
+user-defined postprocess: `npy_PyErr_ChainExceptionCause`
+
+../../corpus/numpy/numpy/numpy//core/src/multiarray/multiarraymodule.c:4205:        PyErr_Format(PyExc_SystemError,                                 \
+N
+macro
+
+../../corpus/numpy/numpy/numpy//core/src/multiarray/multiarraymodule.c:4232:        PyErr_Format(PyExc_SystemError,                                 \
+N
+macro
+
+../../corpus/numpy/numpy/numpy//core/src/multiarray/multiarraymodule.c:4248:        PyErr_Format(PyExc_SystemError,                                 \
+N
+macro
+
+../../corpus/numpy/numpy/numpy//core/src/multiarray/nditer_api.c:373:            PyErr_Format(PyExc_ValueError,
+N
+if/else
+
+../../corpus/numpy/numpy/numpy//core/src/multiarray/nditer_api.c:384:            PyErr_Format(PyExc_ValueError,
+N
+if/else
+
+../../corpus/numpy/numpy/numpy//core/src/multiarray/conversion_utils.c:664:            PyErr_Format(PyExc_ValueError,
+N
+if/else
+
+../../corpus/numpy/numpy/numpy//core/src/multiarray/convert_datatype.c:1031:    PyErr_Format(PyExc_TypeError,
+N
+end of a void function
+
+../../corpus/numpy/numpy/numpy//core/src/multiarray/compiled_base.c:1450:            PyErr_Format(PyExc_RuntimeError, "%s method %s", name, msg); \
+N
+macro?
+
+../../corpus/numpy/numpy/numpy//core/src/multiarray/datetime.c:768:        PyErr_Format(PyExc_TypeError,
+../../corpus/numpy/numpy/numpy//core/src/multiarray/datetime.c:773:        PyErr_Format(PyExc_TypeError,
+../../corpus/numpy/numpy/numpy//core/src/multiarray/datetime.c:830:        PyErr_Format(PyExc_TypeError,
+../../corpus/numpy/numpy/numpy//core/src/multiarray/datetime.c:835:        PyErr_Format(PyExc_TypeError,
+../../corpus/numpy/numpy/numpy//core/src/multiarray/datetime.c:981:            PyErr_Format(PyExc_ValueError,
+N
+if/else
+
+../../corpus/numpy/numpy/numpy//core/src/multiarray/datetime.c:1155:        PyErr_Format(PyExc_OverflowError,
+N
+gc with *obj = NULL/0
+
+../../corpus/numpy/numpy/numpy//core/src/multiarray/datetime.c:1726:        PyErr_Format(PyExc_TypeError,
+N
+if/else
+
+../../corpus/numpy/numpy/numpy//core/src/umath/ufunc_object.c:2178:                    PyErr_Format(PyExc_ValueError,
+N
+if/else
+
+../../corpus/numpy/numpy/numpy//core/src/umath/ufunc_object.c:2670:        PyErr_Format(PyExc_ValueError,
+N
+if/else + goto
+
+../../corpus/numpy/numpy/numpy//core/src/umath/reduction.c:282:                PyErr_Format(PyExc_ValueError,
+N
+if/else + goto
+
+../../corpus/numpy/numpy/numpy//core/src/umath/override.c:599:        PyErr_Format(PyExc_TypeError,
+N
+if/else + goto
+
+../../corpus/numpy/numpy/numpy//core/src/umath/ufunc_type_resolution.c:1989:        PyErr_Format(PyExc_TypeError,
+N
+if/else
+
+../../corpus/numpy/numpy/numpy//core/src/umath/ufunc_type_resolution.c:2001:        PyErr_Format(PyExc_TypeError,
+N
+if/else
+
+../../corpus/numpy/numpy/numpy//core/src/multiarray/nditer_api.c:1718:                    PyErr_NoMemory();
+N
+if/else + goto
+
+../../corpus/numpy/numpy/numpy//core/src/multiarray/dtype_transfer.c:567:        PyErr_NoMemory();
+N
+*obj = NULL/0
+
+../../corpus/numpy/numpy/numpy//core/src/multiarray/dtype_transfer.c:997:        PyErr_NoMemory();
+N
+*obj = NULL/0
+
+../../corpus/numpy/numpy/numpy//core/src/multiarray/dtype_transfer.c:1062:        PyErr_NoMemory();
+N
+*obj = NULL/0
+
+../../corpus/numpy/numpy/numpy//core/src/multiarray/dtype_transfer.c:1178:        PyErr_NoMemory();
+N
+*obj = NULL/0
+
+../../corpus/numpy/numpy/numpy//core/src/multiarray/dtype_transfer.c:1417:        PyErr_NoMemory();
+N
+*obj = NULL/0
+
+../../corpus/numpy/numpy/numpy//core/src/multiarray/dtype_transfer.c:3706:        PyErr_NoMemory();
+user-defined postprocess: `NPY_AUXDATA_FREE()`
+
+../../corpus/numpy/numpy/numpy//core/src/multiarray/ctors.c:902:    PyErr_NoMemory();
+N
+goto + void function
+
+../../corpus/numpy/numpy/numpy//core/src/multiarray/ctors.c:3677:        PyErr_NoMemory();
+N
+if/else
+
+../../corpus/numpy/numpy/numpy//core/src/multiarray/datetime.c:3484:        PyErr_NoMemory();
+N
+user-defined postprocess: `NpyIter_Deallocate()`
+
+../../corpus/numpy/numpy/numpy//core/src/umath/ufunc_object.c:2865:        PyErr_NoMemory();
+N
+if/else + goto
+
+../../corpus/numpy/numpy/numpy//core/src/multiarray/multiarraymodule.c:4409:  PyErr_WarnEx(PyExc_Warning,
+N?
+macro + warning
+
+../../corpus/numpy/numpy/numpy//core/src/multiarray/arrayobject.c:454:    if (PyErr_WarnEx(warning, msg, 1) < 0) {
+N
+warning + if/else
+
+../../corpus/numpy/numpy/numpy//core/src/multiarray/dtype_transfer.c:705:        ret = PyErr_WarnEx(cls,
+N
+warning + if/else
+
+../../corpus/numpy/numpy/numpy//core/src/multiarray/ctors.c:1800:                if (PyErr_WarnEx(visibleDeprecationWarning, "Creating an "
+N
+warning + if/else
+
+../../corpus/numpy/numpy/numpy//core/src/multiarray/nditer_pywrap.c:1138:            if (PyErr_WarnEx(PyExc_RuntimeWarning,
+N
+warning + if/else
+
+../../corpus/numpy/numpy/numpy//core/src/multiarray/datetime.c:1854:                if (PyErr_WarnEx(PyExc_UserWarning,
+N
+warning + if/else
+
+total time : 6.58s
