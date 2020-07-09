@@ -52,12 +52,15 @@ def postprocess(line):
 
 # string, string -> None 
 def check(keyword, path):
+    # global total_file
+
     command = "grep -rn \"" + keyword + "\" " + path
     
     for line in exec_command(command):
         # DO NOT use split(":")
         pos_filepath = line.find(":")
         filepath = line[0:pos_filepath]
+        # total_file.add(filepath)
         filename = filepath[filepath.find(path + "/") + len(path) + 1:] # can be sub-filepath
         if (not filename.endswith(".c")):
             continue
@@ -82,6 +85,7 @@ def check(keyword, path):
 
 if __name__ == "__main__":
     start_time = time.time()
+    # total_file = set()
 
     keywords = [
         # exceptions
@@ -119,3 +123,4 @@ if __name__ == "__main__":
 
     end_time = time.time()
     print("total time : {:.2f}s".format(end_time - start_time))
+    # print("total analyzed files : {}".format(len(total_file)))
