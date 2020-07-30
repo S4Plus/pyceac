@@ -1,0 +1,92 @@
+number of APIs only in Python-3.8.0 : 55
+number of APIs only in Python-3.7.0 : 15
+number of APIs both have, but different : 16
+number of APIs both have, and the same : 773
+                       Python-3.8.0                                                 Python-3.7.0                        
+========================================================================================================================
+PyCodeObject *,PyCode_NewWithPosOnlyArgs(int,int,int,int,int,int,PyObject *,PyObject *,PyObject *,PyObject *,PyObject *,PyObject *,PyObject *,PyObject *,int,PyObject *)                               -                             
+   int,PyCompile_OpcodeStackEffectWithJump(int,int,int)                                   -                             
+              void,PyConfig_Clear(PyConfig *)                                             -                             
+       void,PyConfig_InitIsolatedConfig(PyConfig *)                                       -                             
+        void,PyConfig_InitPythonConfig(PyConfig *)                                        -                             
+            PyStatus,PyConfig_Read(PyConfig *)                                            -                             
+PyStatus,PyConfig_SetArgv(PyConfig *,Py_ssize_t,wchar_t *const *)                               -                             
+PyStatus,PyConfig_SetBytesArgv(PyConfig *,Py_ssize_t,char *const *)                               -                             
+PyStatus,PyConfig_SetBytesString(PyConfig *,wchar_t **,const char *)                               -                             
+PyStatus,PyConfig_SetString(PyConfig *,wchar_t **,const wchar_t *)                               -                             
+PyStatus,PyConfig_SetWideStringList(PyConfig *,PyWideStringList *,Py_ssize_t,wchar_t **)                               -                             
+      const char *,PyExceptionClass_Name(PyObject *)                                      -                             
+         PyObject *,PyFile_OpenCode(const char *)                                         -                             
+       PyObject *,PyFile_OpenCodeObject(PyObject *)                                       -                             
+int,PyFile_SetOpenCodeHook(Py_OpenCodeHookFunction,void *)                                -                             
+               int,PyIndex_Check(PyObject *)                                              -                             
+PyObject *,PyInterpreterState_GetDict(PyInterpreterState *)                               -                             
+               int,PyIter_Check(PyObject *)                                               -                             
+     PyObject *,PyPickleBuffer_FromObject(PyObject *)                                     -                             
+  const Py_buffer *,PyPickleBuffer_GetBuffer(PyObject *)                                  -                             
+          int,PyPickleBuffer_Release(PyObject *)                                          -                             
+    void,PyPreConfig_InitIsolatedConfig(PyPreConfig *)                                    -                             
+     void,PyPreConfig_InitPythonConfig(PyPreConfig *)                                     -                             
+          int,PyRun_AnyFile(FILE *,const char *)                                          -                             
+       int,PyRun_AnyFileEx(FILE *,const char *,int)                                       -                             
+PyObject *,PyRun_File(FILE *,const char *,int,PyObject *,PyObject *)                               -                             
+PyObject *,PyRun_FileEx(FILE *,const char *,int,PyObject *,PyObject *,int)                               -                             
+PyObject *,PyRun_FileFlags(FILE *,const char *,int,PyObject *,PyObject *,PyCompilerFlags *)                               -                             
+      int,PyRun_InteractiveLoop(FILE *,const char *)                                      -                             
+       int,PyRun_InteractiveOne(FILE *,const char *)                                      -                             
+         int,PyRun_SimpleFile(FILE *,const char *)                                        -                             
+      int,PyRun_SimpleFileEx(FILE *,const char *,int)                                     -                             
+           int,PyRun_SimpleString(const char *)                                           -                             
+PyObject *,PyRun_String(const char *,int,PyObject *,PyObject *)                               -                             
+           PyStatus,PyStatus_Error(const char *)                                          -                             
+             int,PyStatus_Exception(PyStatus)                                             -                             
+                PyStatus,PyStatus_Exit(int)                                               -                             
+              int,PyStatus_IsError(PyStatus)                                              -                             
+               int,PyStatus_IsExit(PyStatus)                                              -                             
+               PyStatus,PyStatus_NoMemory()                                               -                             
+                  PyStatus,PyStatus_Ok()                                                  -                             
+    int,PySys_AddAuditHook(Py_AuditHookFunction,void *)                                   -                             
+        int,PySys_Audit(const char *,const char *)                                        -                             
+       unsigned long,PyThread_get_thread_native_id()                                      -                             
+PyObject *,PyVectorcall_Call(PyObject *,PyObject *,PyObject *)                               -                             
+           Py_ssize_t,PyVectorcall_NARGS(size_t)                                          -                             
+PyStatus,PyWideStringList_Append(PyWideStringList *,const wchar_t *)                               -                             
+PyStatus,PyWideStringList_Insert(PyWideStringList *,Py_ssize_t,const wchar_t *)                               -                             
+               int,Py_BytesMain(int,char **)                                              -                             
+           void,Py_ExitStatusException(PyStatus)                                          -                             
+    PyStatus,Py_InitializeFromConfig(const PyConfig *)                                    -                             
+      PyStatus,Py_PreInitialize(const PyPreConfig *)                                      -                             
+PyStatus,Py_PreInitializeFromArgs(const PyPreConfig *,Py_ssize_t,wchar_t **)                               -                             
+PyStatus,Py_PreInitializeFromBytesArgs(const PyPreConfig *,Py_ssize_t,char **)                               -                             
+                     int,Py_RunMain()                                                     -                             
+                             -                                                 void,PyAsyncGen_Fini()                   
+                             -                                                 void,PyByteArray_Fini()                  
+                             -                                                 int,PyByteArray_Init()                   
+                             -                                                   void,PyBytes_Fini()                    
+                             -                                                 void,PyCFunction_Fini()                  
+                             -                                                   void,PyDict_Fini()                     
+                             -                                               void,PyEval_ReInitThreads()                
+                             -                                                   void,PyFloat_Fini()                    
+                             -                                                   void,PyFrame_Fini()                    
+                             -                                                   void,PyList_Fini()                     
+                             -                                                  void,PyMethod_Fini()                    
+                             -                                               void,PyOS_FiniInterrupts()                 
+                             -                                                    void,PySet_Fini()                     
+                             -                                                   void,PySlice_Fini()                    
+                             -                                                   void,PyTuple_Fini()                    
+  int,PyContextVar_Get(PyObject *,PyObject *,PyObject **)    int,PyContextVar_Get(PyContextVar *,PyObject *,PyObject **)
+   PyObject *,PyContextVar_New(const char *,PyObject *)       PyContextVar *,PyContextVar_New(const char *,PyObject *)  
+       int,PyContextVar_Reset(PyObject *,PyObject *)           int,PyContextVar_Reset(PyContextVar *,PyContextToken *)  
+    PyObject *,PyContextVar_Set(PyObject *,PyObject *)       PyContextToken *,PyContextVar_Set(PyContextVar *,PyObject *)
+           PyObject *,PyContext_Copy(PyObject *)                       PyContext *,PyContext_Copy(PyContext *)          
+            PyObject *,PyContext_CopyCurrent()                           PyContext *,PyContext_CopyCurrent()            
+              int,PyContext_Enter(PyObject *)                             int,PyContext_Enter(PyContext *)              
+              int,PyContext_Exit(PyObject *)                               int,PyContext_Exit(PyContext *)              
+                PyObject *,PyContext_New()                                   PyContext *,PyContext_New()                
+PyObject *,PyType_GenericAlloc(struct _typeobject *,Py_ssize_t)   PyObject *,PyType_GenericAlloc(PyTypeObject *,Py_ssize_t) 
+PyObject *,PyType_GenericNew(struct _typeobject *,PyObject *,PyObject *)  PyObject *,PyType_GenericNew(PyTypeObject *,PyObject *,PyObject *)
+    unsigned long,PyType_GetFlags(struct _typeobject *)             unsigned long,PyType_GetFlags(PyTypeObject *)       
+      void *,PyType_GetSlot(struct _typeobject *,int)                 void *,PyType_GetSlot(PyTypeObject *,int)         
+int,PyType_IsSubtype(struct _typeobject *,struct _typeobject *)      int,PyType_IsSubtype(PyTypeObject *,PyTypeObject *)    
+        void,PyType_Modified(struct _typeobject *)                      void,PyType_Modified(PyTypeObject *)            
+          int,PyType_Ready(struct _typeobject *)                          int,PyType_Ready(PyTypeObject *)              

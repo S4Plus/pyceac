@@ -1,5 +1,6 @@
 #!/bin/bash
 
+python3 pycapi_comp.py ../data/python/Python-3.8.0.capi.dat ../data/python/Python-3.7.0.capi.dat > ../data/python/3.8-3.7-comp.dat
 python3 pycapi_comp.py ../data/python/Python-3.7.0.capi.dat ../data/python/Python-3.6.0.capi.dat > ../data/python/3.7-3.6-comp.dat
 python3 pycapi_comp.py ../data/python/Python-3.6.0.capi.dat ../data/python/Python-3.5.0.capi.dat > ../data/python/3.6-3.5-comp.dat
 python3 pycapi_comp.py ../data/python/Python-3.5.0.capi.dat ../data/python/Python-3.4.0.capi.dat > ../data/python/3.5-3.4-comp.dat
