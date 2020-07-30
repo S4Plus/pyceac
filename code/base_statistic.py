@@ -51,6 +51,7 @@ class Project:
             f = bytes.decode(m).split(":")[0]
             if f in self._have_checked:
                 continue
+            self._have_checked.append(f)
             v = check_suffix(f)
             if (v):
                 self.module_file_list.append(f)
@@ -59,7 +60,6 @@ class Project:
                     new_kw = f[f.rfind("/") + 1:]
                     #new_kw = f[f.find(self.path) + len(self.path) + 1:]
                     self.get_module_file(new_kw)
-            self._have_checked.append(f)
 
     def get_statistic(self):
         for f in set(self.module_file_list):
