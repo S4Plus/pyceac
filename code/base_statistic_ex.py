@@ -2,7 +2,8 @@ import os
 import subprocess
 
 def check_suffix(filepath):
-    suffix = [".h", ".i", ".c", ".cc", "cpp"] # .i used by tensorflow for helper macros and typemaps
+    suffix = [".h", ".i", ".c", ".cc", "cpp"]
+    # .i used by tensorflow for helper macros and typemaps
     for s in suffix:
         if filepath.endswith(s):
             return 1
@@ -47,12 +48,13 @@ class Project:
 if __name__=="__main__":
     tensorflow_path = [
         "../corpus/tensorflow/tensorflow/tensorflow/python",
-        "../corpus/tensorflow/tensorflow/tensorflow/lite/python"
+        "../corpus/tensorflow/tensorflow/tensorflow/lite",
     ]
 
     pytorch_path = [
-        "../corpus/pytorch/pytorch/caffe2/python",
-        "../corpus/pytorch/pytorch/torch/csrc"
+        "../corpus/pytorch/pytorch/caffe2",
+        "../corpus/pytorch/pytorch/torch/csrc",
+        "../corpus/pytorch/pytorch/tools/autograd/templates",
     ]
 
     projs = {"tensorflow": tensorflow_path, "pytorch": pytorch_path}
