@@ -108,6 +108,9 @@ if __name__ == "__main__":
             proj_count += 1
             proj = Project(path_prefix, d, FS)
             apis = proj.get_data()
+            with open(path_prefix + "/" + proj.name + ".valid.capi.dat", 'w') as f:
+                for (k, v) in apis.items():
+                    f.write("{}\n".format(k))
             proj_api.append(apis)
             proj_names.append(proj.name[:15])
 
@@ -135,7 +138,7 @@ if __name__ == "__main__":
     J = []
     # dict to set
     proj_sets = []
-    top = 200
+    top = 300
     for d in proj_api:
         proj_sets.append(set(list(d.keys())[:top]))
 
