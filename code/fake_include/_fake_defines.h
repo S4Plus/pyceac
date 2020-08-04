@@ -198,4 +198,6 @@
 #define va_arg(_ap, _type) __builtin_va_arg((_ap))
 #define va_end(_list)
 
+#define LONG_MAX 0X7FFFFFFFFFFFFFFFL
+
 #endif
