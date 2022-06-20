@@ -1,0 +1,17 @@
+Py_DECREF:48
+PyErr_Print:35
+PyObject_CallMethod:10
+PyImport_ImportModule:7
+PyObject_GetAttrString:7
+Py_BuildValue:7
+PyObject_CallObject:7
+Py_Initialize:5
+PySys_GetObject:5
+PyUnicode_FromString:5
+PyList_Append:5
+Py_Finalize:5
+PyFloat_AsDouble:4
+PyLong_AsDouble:2
+PyObject_Repr:1
+PyUnicode_AsEncodedString:1
+PyBytes_AS_STRING:1

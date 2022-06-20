@@ -1,0 +1,17 @@
+PyErr_NewException:8
+PyType_Ready:8
+Py_INCREF:7
+PyModule_AddObject:7
+PyModule_AddIntConstant:6
+PyDict_SetItemString:6
+Py_XDECREF:4
+PyErr_Clear:4
+Py_DECREF:4
+Py_FatalError:2
+PyTuple_Pack:2
+PyImport_ImportModule:2
+PyDict_New:2
+PyRun_String:2
+PyInit_gmpy2:1
+PyModule_Create:1
+Py_InitModule3:1

@@ -1,0 +1,64 @@
+number of APIs only in Python-3.9.0 : 30
+number of APIs only in Python-3.8.0 : 12
+number of APIs both have, but different : 16
+number of APIs both have, and the same : 816
+                       Python-3.9.0                                                 Python-3.8.0                        
+========================================================================================================================
+PyObject *,PyCMethod_New(PyMethodDef *,PyObject *,PyObject *,PyTypeObject *)                               -                             
+      PyCodeObject *,PyFrame_GetCode(PyFrameObject *)                                     -                             
+        int,PyFrame_GetLineNumber(PyFrameObject *)                                        -                             
+       PyInterpreterState *,PyInterpreterState_Get()                                      -                             
+      int,PyModule_AddType(PyObject *,PyTypeObject *)                                     -                             
+PyObject *,PyObject_CallMethodNoArgs(PyObject *,PyObject *)                               -                             
+PyObject *,PyObject_CallMethodOneArg(PyObject *,PyObject *,PyObject *)                               -                             
+        PyObject *,PyObject_CallNoArgs(PyObject *)                                        -                             
+   PyObject *,PyObject_CallOneArg(PyObject *,PyObject *)                                  -                             
+           int,PyObject_CheckBuffer(PyObject *)                                           -                             
+          int,PyObject_GC_IsFinalized(PyObject *)                                         -                             
+           int,PyObject_GC_IsTracked(PyObject *)                                          -                             
+   PyObject **,PyObject_GET_WEAKREFS_LISTPTR(PyObject *)                                  -                             
+              int,PyObject_IS_GC(PyObject *)                                              -                             
+PyObject *,PyObject_Vectorcall(PyObject *,PyObject *const *,size_t,PyObject *)                               -                             
+PyObject *,PyObject_VectorcallDict(PyObject *,PyObject *const *,size_t,PyObject *)                               -                             
+PyObject *,PyObject_VectorcallMethod(PyObject *,PyObject *const *,size_t,PyObject *)                               -                             
+  PyFrameObject *,PyThreadState_GetFrame(PyThreadState *)                                 -                             
+       uint64_t,PyThreadState_GetID(PyThreadState *)                                      -                             
+PyInterpreterState *,PyThreadState_GetInterpreter(PyThreadState *)                               -                             
+PyObject *,PyType_FromModuleAndSpec(PyObject *,PyType_Spec *,PyObject *)                               -                             
+     PyObject *,PyType_GetModule(struct _typeobject *)                                    -                             
+    void *,PyType_GetModuleState(struct _typeobject *)                                    -                             
+    int,PyType_HasFeature(PyTypeObject *,unsigned long)                                   -                             
+     vectorcallfunc,PyVectorcall_Function(PyObject *)                                     -                             
+          int,Py_EnterRecursiveCall(const char *)                                         -                             
+     PyObject *,Py_GenericAlias(PyObject *,PyObject *)                                    -                             
+               void,Py_LeaveRecursiveCall()                                               -                             
+void,Py_UNICODE_COPY(Py_UNICODE *,const Py_UNICODE *,Py_ssize_t)                               -                             
+ void,Py_UNICODE_FILL(Py_UNICODE *,Py_UNICODE,Py_ssize_t)                                 -                             
+                             -                                             int,PyAsyncGen_ClearFreeLists()              
+                             -                                             int,PyCFunction_ClearFreeList()              
+                             -                                              int,PyContext_ClearFreeList()               
+                             -                                               int,PyDict_ClearFreeList()                 
+                             -                                               int,PyFloat_ClearFreeList()                
+                             -                                        int,PyGen_NeedsFinalizing(PyGenObject *)          
+                             -                                                 void,PyImport_Cleanup()                  
+                             -                                               int,PyList_ClearFreeList()                 
+                             -                                              int,PyMethod_ClearFreeList()                
+                             -                                                int,PySet_ClearFreeList()                 
+                             -                                               int,PyTuple_ClearFreeList()                
+                             -                                              int,PyUnicode_ClearFreeList()               
+PyObject *,PyAsyncGen_New(PyFrameObject *,PyObject *,PyObject *)  PyObject *,PyAsyncGen_New(struct _frame *,PyObject *,PyObject *)
+     Py_ssize_t,PyBuffer_SizeFromFormat(const char *)                 int,PyBuffer_SizeFromFormat(const char *)         
+PyObject *,PyCoro_New(PyFrameObject *,PyObject *,PyObject *)  PyObject *,PyCoro_New(struct _frame *,PyObject *,PyObject *)
+       PyObject *,PyEval_EvalFrame(PyFrameObject *)                 PyObject *,PyEval_EvalFrame(struct _frame *)        
+    PyObject *,PyEval_EvalFrameEx(PyFrameObject *,int)           PyObject *,PyEval_EvalFrameEx(struct _frame *,int)     
+             PyFrameObject *,PyEval_GetFrame()                            struct _frame *,PyEval_GetFrame()             
+           PyObject *,PyGen_New(PyFrameObject *)                        PyObject *,PyGen_New(struct _frame *)           
+PyObject *,PyGen_NewWithQualName(PyFrameObject *,PyObject *,PyObject *)  PyObject *,PyGen_NewWithQualName(struct _frame *,PyObject *,PyObject *)
+           int,PyTraceBack_Here(PyFrameObject *)                        int,PyTraceBack_Here(struct _frame *)           
+ PyObject *,PyType_GenericAlloc(PyTypeObject *,Py_ssize_t)   PyObject *,PyType_GenericAlloc(struct _typeobject *,Py_ssize_t)
+PyObject *,PyType_GenericNew(PyTypeObject *,PyObject *,PyObject *)  PyObject *,PyType_GenericNew(struct _typeobject *,PyObject *,PyObject *)
+       unsigned long,PyType_GetFlags(PyTypeObject *)             unsigned long,PyType_GetFlags(struct _typeobject *)    
+         void *,PyType_GetSlot(PyTypeObject *,int)                 void *,PyType_GetSlot(struct _typeobject *,int)      
+    int,PyType_IsSubtype(PyTypeObject *,PyTypeObject *)      int,PyType_IsSubtype(struct _typeobject *,struct _typeobject *)
+           void,PyType_Modified(PyTypeObject *)                      void,PyType_Modified(struct _typeobject *)         
+             int,PyType_Ready(PyTypeObject *)                          int,PyType_Ready(struct _typeobject *)           
